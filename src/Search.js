@@ -11,7 +11,6 @@ export default function Search() {
             {/* Form */}
             <form>
               <div className="row">
-                <div className="col-md-3 d-md-block d-none search-bar"></div>
                 {/* Search bar (displayed for desktop) */}
                 <div className="input-group">
                   <div className="col-md-3 d-md-block d-none search-bar">
@@ -22,8 +21,10 @@ export default function Search() {
                       aria-label="Type a city"
                     />
                   </div>
-                  <div className="col-md-3 d-md-block d-none search-bar">
-                    Hey
+                  <div className="col-md-1 d-md-block d-none search-bar">
+                    <button type="submit" class="btn btn-primary">
+                      Search
+                    </button>
                   </div>
                 </div>
                 <div className="col-2 d-md-none d-block search-bar"></div>
