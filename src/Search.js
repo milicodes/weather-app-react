@@ -4,17 +4,17 @@ import "./Search.css";
 export default function Search() {
   return (
     <div className="Search">
-      {/* Search bar container */}
+      {/* container */}
       <div className="container">
         <div className="row">
           <div className="col-sm">
             {/* Form */}
             <form>
               <div className="row">
-                {/* Search bar (displayed for desktop) */}
-                <div className="input-group">
-                  <div className="col-md-3 d-md-block d-none search-bar"></div>
-                  <div className="col-md-4 d-md-block d-none search-bar">
+                {/* (displayed for desktop) */}
+                <div className="input-group margin-top">
+                  <div className="col-md-3 d-md-block d-none"></div>
+                  <div className="col-md-4 d-md-block d-none">
                     <input
                       type="text"
                       className="form-control"
@@ -22,16 +22,19 @@ export default function Search() {
                       aria-label="Type a city"
                     />
                   </div>
-                  <div className="col-md-1 d-md-block d-none search-bar">
+                  <div className="col-md-2 d-md-block d-none">
+                    <button type="submit" class="btn btn-primary">
+                      Search
+                    </button>
                     <button type="submit" class="btn btn-primary">
                       Search
                     </button>
                   </div>
                 </div>
-                <div className="input-group">
-                  <div className="col-3 d-md-none d-block search-bar"></div>
-                  {/* Search bar (displayed for mobile) */}
-                  <div className="col-5 d-md-none d-block search-bar">
+                {/* (displayed for mobile) */}
+                <div className="input-group margin-top">
+                  <div className="col-3 d-md-none d-block"></div>
+                  <div className="col-5 d-md-none d-block">
                     <input
                       type="text"
                       className="form-control"
@@ -39,9 +42,12 @@ export default function Search() {
                       aria-label="Type a city"
                     />
                   </div>
-                  <div className="col-2 d-md-none d-block search-bar">
+                  <div className="col-3 d-md-none d-block">
                     <button type="submit" class="btn btn-primary">
-                      Search
+                      S
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                      S
                     </button>
                   </div>
                 </div>
