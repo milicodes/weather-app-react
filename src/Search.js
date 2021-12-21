@@ -13,7 +13,8 @@ export default function Search() {
               <div className="row">
                 {/* Search bar (displayed for desktop) */}
                 <div className="input-group">
-                  <div className="col-md-3 d-md-block d-none search-bar">
+                  <div className="col-md-3 d-md-block d-none search-bar"></div>
+                  <div className="col-md-4 d-md-block d-none search-bar">
                     <input
                       type="text"
                       className="form-control"
