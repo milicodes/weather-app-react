@@ -22,12 +22,12 @@ export default function Search() {
                       aria-label="Type a city"
                     />
                   </div>
-                  <div className="col-md-2 d-md-block d-none">
+                  <div className="col-md-3 d-md-block d-none">
                     <button type="submit" class="btn btn-primary">
                       Search
                     </button>
                     <button type="submit" class="btn btn-primary">
-                      Search
+                      Main
                     </button>
                   </div>
                 </div>
@@ -42,7 +42,7 @@ export default function Search() {
                       aria-label="Type a city"
                     />
                   </div>
-                  <div className="col-3 d-md-none d-block">
+                  <div className="col-4 d-md-none d-block">
                     <button type="submit" class="btn btn-primary">
                       S
                     </button>
