@@ -5,3 +5,7 @@
 .col-bor {
    border: 3px solid orange; 
 }
+
+button {
+    margin-left: 1rem;
+}

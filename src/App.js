@@ -10,13 +10,6 @@ function App() {
       <Search />
       {/*Temperature */}
       <Temperature />
-      <div className="container">
-        <div className="row">
-          <div className="col">
-            <h1>Hello world</h1>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
