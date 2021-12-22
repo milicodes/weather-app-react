@@ -26,7 +26,7 @@ export default function Search() {
                     <button type="submit" class="btn btn-primary">
                       Search
                     </button>
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit" class="btn btn-desk btn-primary">
                       Main
                     </button>
                   </div>
@@ -46,7 +46,7 @@ export default function Search() {
                     <button type="submit" class="btn btn-primary">
                       S
                     </button>
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit" class="btn btn-desk btn-primary">
                       S
                     </button>
                   </div>

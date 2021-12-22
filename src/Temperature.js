@@ -29,11 +29,12 @@ export default function Temperature() {
                     <div className="col-3 col-bor">
                       <h2 className="temperature-number">5 km/h</h2>
                     </div>
+                    {/*Unit convertion buttons*/}
                     <div className="col col-bor">
-                      <button type="submit" class="btn btn-primary">
+                      <button type="submit" class="btn  btn-primary">
                         Main
                       </button>
-                      <button type="submit" class="btn btn-primary">
+                      <button type="submit" class="btn btn-desk btn-primary">
                         Main
                       </button>
                     </div>
@@ -47,15 +48,15 @@ export default function Temperature() {
             {/*Left Container */}
             <div className="container-fluid col-bor">
               <div className="row">
-                {/*Icon*/}
+                {/*Icon Mobile*/}
                 <div className="col col-bor ">
                   <h2 className="temperature-number">23</h2>
                 </div>
-                {/*Temperature*/}
+                {/*Temperature Mobile*/}
                 <div className="col col-bor">
                   <h2 className="temperature-number">23</h2>
                 </div>
-                {/*Description*/}
+                {/*Description Mobile*/}
                 <div className="container">
                   <div className="row">
                     <div className="col-3 col-bor">
@@ -64,6 +65,7 @@ export default function Temperature() {
                     <div className="col-3 col-bor">
                       <h2 className="temperature-number">5 km/h</h2>
                     </div>
+                    {/*Unit convertion buttons for mobile*/}
                     <div className="col-3 col-bor">
                       <button type="submit" class="btn btn-primary">
                         M

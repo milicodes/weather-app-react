@@ -9,3 +9,8 @@ div.margin-top {
 div.search-bar {
     border: solid 4px #a03aff;
 }
+
+
+button.btn-desk {
+    margin: 0 0 0 1rem;
+}
