@@ -1,5 +1,6 @@
 import React from "react";
 import "./Temperature.css";
+import Weather from "./Weather";
 
 export default function Temperature() {
   return (
@@ -31,11 +32,11 @@ export default function Temperature() {
                     </div>
                     {/*Unit convertion buttons*/}
                     <div className="col col-bor">
-                      <button type="submit" class="btn  btn-primary">
-                        Main
+                      <button type="submit" className="btn  btn-primary">
+                        °C
                       </button>
-                      <button type="submit" class="btn btn-desk btn-primary">
-                        Main
+                      <button type="submit" className="btn btn-desk btn-primary">
+                        °F
                       </button>
                     </div>
                   </div>
@@ -67,13 +68,13 @@ export default function Temperature() {
                     </div>
                     {/*Unit convertion buttons for mobile*/}
                     <div className="col-3 col-bor">
-                      <button type="submit" class="btn btn-primary">
-                        M
+                      <button type="submit" className="btn btn-primary">
+                        °C
                       </button>
                     </div>
                     <div className="col-3 col-bor">
-                      <button type="submit" class="btn btn-primary">
-                        M
+                      <button type="submit" className="btn btn-primary">
+                        °F
                       </button>
                     </div>
                   </div>
@@ -82,12 +83,14 @@ export default function Temperature() {
             </div>
           </div>
 
-          {/*Right container*/}
+          {/*Right container from main container*/}
           <div className="col-6 d-none d-lg-block">
             <h2 className="temperature-number col-bor">Rain Today</h2>
           </div>
         </div>
       </div>
+      {/*Right container for Mobile*/}
+      <Weather />
     </div>
   );
 }

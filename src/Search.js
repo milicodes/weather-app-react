@@ -23,10 +23,10 @@ export default function Search() {
                     />
                   </div>
                   <div className="col-md-3 d-md-block d-none">
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit" className="btn btn-primary">
                       Search
                     </button>
-                    <button type="submit" class="btn btn-desk btn-primary">
+                    <button type="submit" className="btn btn-desk btn-primary">
                       Main
                     </button>
                   </div>
@@ -43,10 +43,10 @@ export default function Search() {
                     />
                   </div>
                   <div className="col-4 d-md-none d-block">
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit" className="btn btn-primary">
                       S
                     </button>
-                    <button type="submit" class="btn btn-desk btn-primary">
+                    <button type="submit" className="btn btn-desk btn-primary">
                       S
                     </button>
                   </div>
