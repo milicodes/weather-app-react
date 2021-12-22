@@ -64,10 +64,12 @@ export default function Temperature() {
                     <div className="col-3 col-bor">
                       <h2 className="temperature-number">5 km/h</h2>
                     </div>
-                    <div className="col col-bor">
+                    <div className="col-3 col-bor">
                       <button type="submit" class="btn btn-primary">
                         M
                       </button>
+                    </div>
+                    <div className="col-3 col-bor">
                       <button type="submit" class="btn btn-primary">
                         M
                       </button>
