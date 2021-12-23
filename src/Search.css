@@ -6,6 +6,10 @@ div.margin-top {
     margin: 1.4rem 0 0 0;
 }
 
+div.space-desktop {
+    margin: 3rem 0 0 0;
+}
+
 div.search-bar {
     border: solid 4px #a03aff;
 }
@@ -13,4 +17,8 @@ div.search-bar {
 
 button.btn-desk {
     margin: 0 0 0 1rem;
+}
+
+div.margin-top-search-desktop {
+    margin: 4rem 0 0 0;
 }

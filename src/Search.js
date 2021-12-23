@@ -5,6 +5,7 @@ export default function Search() {
   return (
     <div className="Search">
       {/* container */}
+      <div className="space-desktop d-none d-lg-block"></div>
       <div className="container">
         <div className="row">
           <div className="col-sm">
