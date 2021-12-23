@@ -4,6 +4,7 @@ import Weather from "./Weather";
 import WeatherMobile from "./WeatherMobile";
 import Forecast from "./Forecast";
 import TemperatureMobile from "./TemperatureMobile";
+import Credits from "./Credits";
 
 export default function Temperature() {
   return (
@@ -64,6 +65,8 @@ export default function Temperature() {
       </div>
       {/*Weather for Mobile*/}
       <WeatherMobile />
+      {/*Credits*/}
+      <Credits />
     </div>
   );
 }
