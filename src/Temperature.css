@@ -9,3 +9,11 @@
 button.btn-desk {
     margin: 0 0 0 1rem;
 }
+
+h2.weather-name {
+    font-size: 60px;
+}
+
+.temperature-number {
+    font-size: 60px;
+}

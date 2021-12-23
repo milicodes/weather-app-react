@@ -15,7 +15,7 @@ export default function Temperature() {
               <div className="row">
                 {/*Icon*/}
                 <div className="col col-bor">
-                  <h2 className="temperature-number">23</h2>
+                  <h2 className="icon">23</h2>
                 </div>
                 {/*Temperature*/}
                 <div className="col col-bor">
@@ -25,17 +25,20 @@ export default function Temperature() {
                 <div className="container">
                   <div className="row">
                     <div className="col-3 col-bor">
-                      <h2 className="temperature-number">80%</h2>
+                      <h2 className="humidity">80%</h2>
                     </div>
                     <div className="col-3 col-bor">
-                      <h2 className="temperature-number">5 km/h</h2>
+                      <h2 className="wind">5 km/h</h2>
                     </div>
                     {/*Unit convertion buttons*/}
                     <div className="col col-bor">
                       <button type="submit" className="btn  btn-primary">
                         °C
                       </button>
-                      <button type="submit" className="btn btn-desk btn-primary">
+                      <button
+                        type="submit"
+                        className="btn btn-desk btn-primary"
+                      >
                         °F
                       </button>
                     </div>
@@ -51,7 +54,7 @@ export default function Temperature() {
               <div className="row">
                 {/*Icon Mobile*/}
                 <div className="col col-bor ">
-                  <h2 className="temperature-number">23</h2>
+                  <h2 className="icon">Icon</h2>
                 </div>
                 {/*Temperature Mobile*/}
                 <div className="col col-bor">
@@ -61,10 +64,10 @@ export default function Temperature() {
                 <div className="container">
                   <div className="row">
                     <div className="col-3 col-bor">
-                      <h2 className="temperature-number">80%</h2>
+                      <h2 className="humidity">80%</h2>
                     </div>
                     <div className="col-3 col-bor">
-                      <h2 className="temperature-number">5 km/h</h2>
+                      <h2 className="wind">5 km/h</h2>
                     </div>
                     {/*Unit convertion buttons for mobile*/}
                     <div className="col-3 col-bor">
@@ -85,7 +88,16 @@ export default function Temperature() {
 
           {/*Right container from main container*/}
           <div className="col-6 d-none d-lg-block">
-            <h2 className="temperature-number col-bor">Rain Today</h2>
+            <div className="container col-bor">
+              <div className="row">
+                <div className="col-12">
+                  <h2 className="weather-name col-bor">Rain</h2>
+                </div>
+                <div className="col-12">
+                  <h3 className="day col-bor">Today</h3>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
