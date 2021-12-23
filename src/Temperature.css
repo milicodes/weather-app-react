@@ -15,5 +15,9 @@ h2.weather-name {
 }
 
 .temperature-number {
-    font-size: 60px;
+    font-size: 90px;
+}
+
+.icon {
+    font-size: 100px;
 }

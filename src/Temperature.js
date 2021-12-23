@@ -88,11 +88,14 @@ export default function Temperature() {
 
           {/*Right container from main container*/}
           <div className="col-6 d-none d-lg-block">
+            {/*Right container for Weather*/}
             <div className="container col-bor">
               <div className="row">
                 <div className="col-12">
+                  {/*Weather*/}
                   <h2 className="weather-name col-bor">Rain</h2>
                 </div>
+                {/*Date*/}
                 <div className="col-12">
                   <h3 className="day col-bor">Today</h3>
                 </div>
