@@ -1,6 +1,8 @@
 import React from "react";
 import "./Temperature.css";
 import Weather from "./Weather";
+import WeatherMobile from "./WeatherMobile";
+import Forecast from "./Forecast";
 
 export default function Temperature() {
   return (
@@ -54,11 +56,11 @@ export default function Temperature() {
               <div className="row">
                 {/*Icon Mobile*/}
                 <div className="col col-bor ">
-                  <h2 className="icon">Icon</h2>
+                  <h2 className="icon-mobile">Icon</h2>
                 </div>
                 {/*Temperature Mobile*/}
                 <div className="col col-bor">
-                  <h2 className="temperature-number">23</h2>
+                  <h2 className="temperature-number-mobile">23</h2>
                 </div>
                 {/*Description Mobile*/}
                 <div className="container">
@@ -89,23 +91,15 @@ export default function Temperature() {
           {/*Right container from main container*/}
           <div className="col-6 d-none d-lg-block">
             {/*Right container for Weather*/}
-            <div className="container col-bor">
-              <div className="row">
-                <div className="col-12">
-                  {/*Weather*/}
-                  <h2 className="weather-name col-bor">Rain</h2>
-                </div>
-                {/*Date*/}
-                <div className="col-12">
-                  <h3 className="day col-bor">Today</h3>
-                </div>
-              </div>
-            </div>
+            {/* Weather for Desktop*/}
+            <Weather />
+            <Forecast />
           </div>
         </div>
+        {/*Ending of Right Container*/}
       </div>
-      {/*Right container for Mobile*/}
-      <Weather />
+      {/*Weather for Mobile*/}
+      <WeatherMobile />
     </div>
   );
 }
