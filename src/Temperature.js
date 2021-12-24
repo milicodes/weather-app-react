@@ -1,6 +1,5 @@
 import React from "react";
 import "./Temperature.css";
-import Weather from "./Weather";
 import WeatherMobile from "./WeatherMobile";
 import Forecast from "./Forecast";
 import TemperatureMobile from "./TemperatureMobile";
@@ -17,25 +16,24 @@ export default function Temperature() {
             {/*Left Container Desktop*/}
             <div className="container-fluid col-bor">
               <div className="row">
+                <div className="col-6 col-bor">
+                  <h2 className="city">San Francisco</h2>
+                </div>
+                <div className="col-6 col-bor"></div>
                 {/*Icon*/}
-                <div className="col col-bor">
-                  <h2 className="icon">23</h2>
+                <div className="col-6 col-bor">
+                  <h2 className="temperature-number">23°</h2>
                 </div>
                 {/*Temperature*/}
-                <div className="col col-bor">
-                  <h2 className="temperature-number">23</h2>
+                <div className="col-6 col-bor">
+                  <h2 className="icon">O</h2>
                 </div>
+
                 {/*Description*/}
                 <div className="container">
                   <div className="row">
-                    <div className="col-3 col-bor">
-                      <h2 className="humidity">80%</h2>
-                    </div>
-                    <div className="col-3 col-bor">
-                      <h2 className="wind">5 km/h</h2>
-                    </div>
                     {/*Unit convertion buttons*/}
-                    <div className="col col-bor">
+                    <div className="col-6 col-bor">
                       <button type="submit" className="btn  btn-primary">
                         °C
                       </button>
@@ -45,6 +43,15 @@ export default function Temperature() {
                       >
                         °F
                       </button>
+                    </div>
+                    <div className="col-6 col-bor">
+                      <h2 className="weather-name">Sunny</h2>
+                    </div>
+                    <div className="col-6 col-bor">
+                      <h3 className="humidity">80%</h3>
+                    </div>
+                    <div className="col-6 col-bor">
+                      <h3 className="wind">5 km/h</h3>
                     </div>
                   </div>
                 </div>
@@ -57,7 +64,6 @@ export default function Temperature() {
           <div className="col-6 d-none d-lg-block">
             {/*Right container for Weather*/}
             {/* Weather for Desktop*/}
-            <Weather />
             <Forecast />
           </div>
         </div>
