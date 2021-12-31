@@ -9,12 +9,12 @@ export default function Temperature() {
   return (
     <div className="Temperature margin-top">
       {/*Main container */}
-      <div className="container">
+      <div className="container col-bor">
         <div className="row">
           {/*Left Section Desktop*/}
-          <div className="col-6 d-none d-lg-block">
+          <div className="col-12 d-none d-lg-block">
             {/*Left Container Desktop*/}
-            <div className="container-fluid col-bor">
+            <div className="container margin-sides col-bor">
               <div className="row">
                 <div className="col-6 col-bor">
                   <h2 className="city">San Francisco</h2>
@@ -61,7 +61,7 @@ export default function Temperature() {
           {/*Left Section Mobile */}
           <TemperatureMobile />
           {/*Right container from main container*/}
-          <div className="col-6 d-none d-lg-block">
+          <div className="col-12  d-none d-lg-block">
             {/*Right container for Weather*/}
             {/* Weather for Desktop*/}
             <Forecast />
