@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import "./TemperatureMobile.css";
 
 export default function TemperatureMobile() {
@@ -19,7 +21,7 @@ export default function TemperatureMobile() {
             <div className="container">
               <div className="row">
                 <div className="col-3 col-bor">
-                  <h2 className="humidity">80%</h2>
+                  <h2 className="humidity">  80%</h2>
                 </div>
                 <div className="col-3 col-bor">
                   <h2 className="wind">5 km/h</h2>

@@ -23,12 +23,9 @@ export default function Search() {
                       aria-label="Type a city"
                     />
                   </div>
-                  <div className="col-md-3 d-md-block d-none">
+                  <div className="col-md-3 d-md-block d-none search-button">
                     <button type="submit" className="btn btn-primary">
                       Search
-                    </button>
-                    <button type="submit" className="btn btn-desk btn-primary">
-                      Main
                     </button>
                   </div>
                 </div>

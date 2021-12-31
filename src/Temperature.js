@@ -4,6 +4,9 @@ import WeatherMobile from "./WeatherMobile";
 import Forecast from "./Forecast";
 import TemperatureMobile from "./TemperatureMobile";
 import Credits from "./Credits";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTint } from "@fortawesome/free-solid-svg-icons";
+import { faWind } from "@fortawesome/free-solid-svg-icons";
 
 export default function Temperature() {
   return (
@@ -17,7 +20,12 @@ export default function Temperature() {
             <div className="container margin-sides col-bor">
               <div className="row">
                 <div className="col-6 col-bor">
-                  <h2 className="city">San Francisco</h2>
+                  <h2 className="city">
+                    <button type="submit" className="btn btn-desk btn-primary">
+                      Main
+                    </button>
+                    San Francisco
+                  </h2>
                 </div>
                 <div className="col-6 col-bor"></div>
                 {/*Icon*/}
@@ -48,10 +56,15 @@ export default function Temperature() {
                       <h2 className="weather-name">Sunny</h2>
                     </div>
                     <div className="col-6 col-bor">
-                      <h3 className="humidity">80%</h3>
+                      <h3 className="humidity">
+                        {" "}
+                        <FontAwesomeIcon icon={faTint} /> 80%
+                      </h3>
                     </div>
                     <div className="col-6 col-bor">
-                      <h3 className="wind">5 km/h</h3>
+                      <h3 className="wind">
+                        <FontAwesomeIcon icon={faWind} /> 5 km/h
+                      </h3>
                     </div>
                   </div>
                 </div>
