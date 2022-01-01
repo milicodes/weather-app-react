@@ -11,22 +11,24 @@ export default function Search() {
           <div className="col-sm">
             {/* Form */}
             <form>
-              <div className="row">
-                {/* (displayed for desktop) */}
-                <div className="input-group margin-top">
-                  <div className="col-md-3 d-md-block d-none"></div>
-                  <div className="col-md-4 d-md-block d-none">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Type a city"
-                      aria-label="Type a city"
-                    />
-                  </div>
-                  <div className="col-md-3 d-md-block d-none search-button">
-                    <button type="submit" className="btn btn-primary">
-                      Search
-                    </button>
+              <div className="container col-bor">
+                <div className="row">
+                  {/* (displayed for desktop) */}
+                  <div className="input-group margin-top">
+                    <div className="col-md-3 d-md-block d-none"></div>
+                    <div className="col-md-4 d-md-block d-none">
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Type a city"
+                        aria-label="Type a city"
+                      />
+                    </div>
+                    <div className="col-md-3 d-md-block d-none search-button">
+                      <button type="submit" className="btn btn-primary">
+                        Search
+                      </button>
+                    </div>
                   </div>
                 </div>
                 {/* (displayed for mobile) */}
