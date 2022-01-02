@@ -1,9 +1,9 @@
 import React from "react";
-import "./Temperature.css";
-import WeatherMobile from "./WeatherMobile";
+import "./Temperature.css"
 import Forecast from "./Forecast";
 import TemperatureMobile from "./TemperatureMobile";
 import Credits from "./Credits";
+import ForecastMobile from "./ForecastMobile";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTint } from "@fortawesome/free-solid-svg-icons";
 import { faWind } from "@fortawesome/free-solid-svg-icons";
@@ -82,8 +82,8 @@ export default function Temperature() {
         </div>
         {/*Ending of Right Container*/}
       </div>
-      {/*Weather for Mobile*/}
-      <WeatherMobile />
+      {/*Forecast for Mobile*/}
+      <ForecastMobile />
       {/*Credits*/}
       <Credits />
     </div>

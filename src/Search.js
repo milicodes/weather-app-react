@@ -32,23 +32,23 @@ export default function Search() {
                   </div>
                 </div>
                 {/* (displayed for mobile) */}
-                <div className="input-group margin-top">
-                  <div className="col-3 d-md-none d-block"></div>
-                  <div className="col-5 d-md-none d-block">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Type a city"
-                      aria-label="Type a city"
-                    />
-                  </div>
-                  <div className="col-4 d-md-none d-block">
-                    <button type="submit" className="btn btn-primary">
-                      S
-                    </button>
-                    <button type="submit" className="btn btn-desk btn-primary">
-                      S
-                    </button>
+                <div className="input-group margin-top d-block d-md-none">
+                  <div className="container col-bor">
+                    <div className="row col-bor">
+                      <div className="col-8 d-md-none d-block col-bor">
+                        <input
+                          type="text"
+                          className="form-control"
+                          placeholder="Type a city"
+                          aria-label="Type a city"
+                        />
+                      </div>
+                      <div className="col-4 d-md-none d-block col-bor">
+                        <button type="submit" className="btn btn-primary">
+                          S
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
