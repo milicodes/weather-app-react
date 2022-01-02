@@ -1,9 +1,11 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import "./TemperatureMobile.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTint } from "@fortawesome/free-solid-svg-icons";
+import { faWind } from "@fortawesome/free-solid-svg-icons";
 
-export default function TemperatureMobile() {
+export default function TemperatureMobile(promps) {
+
     return (
       <div className="TemperatureMobile d-block d-lg-none">
         {/*Left Container */}
@@ -24,7 +26,9 @@ export default function TemperatureMobile() {
             </div>
             {/*Temperature Mobile*/}
             <div className="col-12 col-bor ">
-              <h2 className="temperature-number-mobile">23°</h2>
+              <h2 className="temperature-number-mobile">
+                {Math.round(promps.defaultTemperature)}°
+              </h2>
             </div>
             {/*Unit convertion Mobile*/}
             <div className="col-6 col-bor ">
@@ -45,10 +49,15 @@ export default function TemperatureMobile() {
             <div className="container">
               <div className="row">
                 <div className="col-6 col-bor">
-                  <h2 className="humidity"> 80%</h2>
+                  <h2 className="humidity">
+                    <FontAwesomeIcon icon={faTint} /> 80%
+                  </h2>
                 </div>
                 <div className="col-6 col-bor">
-                  <h2 className="wind">5 km/h</h2>
+                  <h2 className="wind">
+                    {" "}
+                    <FontAwesomeIcon icon={faWind} /> 5 km/h
+                  </h2>
                 </div>
               </div>
             </div>
