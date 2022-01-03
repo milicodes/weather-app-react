@@ -8,15 +8,18 @@ import ForecastMobile from "./ForecastMobile";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTint } from "@fortawesome/free-solid-svg-icons";
 import { faWind } from "@fortawesome/free-solid-svg-icons";
+import { faSun } from "@fortawesome/free-solid-svg-icons";
 
 export default function Temperature() {
+  // State for realtime API weather
   const [ready, setReady] = useState(false);
   const [weatherData, setWeatherData] = useState({});
   function handleResponse(response) {
-    console.log(response.data.main.temp);
     setWeatherData({
       temp: response.data.main.temp,
       city: response.data.name,
+      wind: response.data.wind.speed,
+      humidity: response.data.main.humidity,
     });
     setReady(true);
   }
@@ -43,16 +46,20 @@ export default function Temperature() {
                     </h2>
                   </div>
                   <div className="col-6 col-bor"></div>
-                  {/*Icon*/}
-                  <div className="col-6 col-bor">
-                    <h2 className="temperature-number">{Math.round(weatherData.temp)}°</h2>
-                  </div>
                   {/*Temperature*/}
                   <div className="col-6 col-bor">
-                    <h2 className="icon">O</h2>
+                    <h2 className="temperature-number">
+                      {Math.round(weatherData.temp)}°
+                    </h2>
+                  </div>
+                  {/*Icon*/}
+                  <div className="col-6 col-bor">
+                    <div className="icon">
+                      <FontAwesomeIcon icon={faSun} />
+                    </div>
                   </div>
 
-                  {/*Description*/}
+                  {/*Convertion*/}
                   <div className="container">
                     <div className="row">
                       {/*Unit convertion buttons*/}
@@ -73,12 +80,14 @@ export default function Temperature() {
                       <div className="col-6 col-bor">
                         <h3 className="humidity">
                           {" "}
-                          <FontAwesomeIcon icon={faTint} /> 80%
+                          <FontAwesomeIcon icon={faTint} />{" "}
+                          {weatherData.humidity}%
                         </h3>
                       </div>
                       <div className="col-6 col-bor">
                         <h3 className="wind">
-                          <FontAwesomeIcon icon={faWind} /> 5 km/h
+                          <FontAwesomeIcon icon={faWind} />{" "}
+                          {Math.round(weatherData.wind)} km/h
                         </h3>
                       </div>
                     </div>
@@ -87,7 +96,7 @@ export default function Temperature() {
               </div>
             </div>
             {/*Left Section Mobile */}
-            <TemperatureMobile defaultTemperature={weatherData.temp}/>
+            <TemperatureMobile defaultTemperature={weatherData.temp} />
             {/*Right container from main container*/}
             <div className="col-12  d-none d-lg-block">
               {/*Right container for Weather*/}
@@ -104,7 +113,7 @@ export default function Temperature() {
       </div>
     );
   } else {
-    let city = "San Francisco";
+    let city = "Tokyo";
     const apiKey = "62a816282d3b51b7451838a6b7b63934";
     let apiURL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiURL).then(handleResponse);
