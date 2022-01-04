@@ -1,5 +1,7 @@
 import React from "react";
 import "./Search.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 export default function Search() {
   return (
@@ -26,7 +28,7 @@ export default function Search() {
                     </div>
                     <div className="col-md-3 d-md-block d-none search-button">
                       <button type="submit" className="btn btn-primary">
-                        Search
+                        <FontAwesomeIcon icon={faSearch} />
                       </button>
                     </div>
                   </div>
