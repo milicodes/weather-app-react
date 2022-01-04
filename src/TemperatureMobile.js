@@ -3,6 +3,8 @@ import "./TemperatureMobile.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTint } from "@fortawesome/free-solid-svg-icons";
 import { faWind } from "@fortawesome/free-solid-svg-icons";
+import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
+import { faSun } from "@fortawesome/free-solid-svg-icons";
 
 export default function TemperatureMobile(promps) {
 
@@ -15,14 +17,16 @@ export default function TemperatureMobile(promps) {
             <div className="col-12 col-bor ">
               <h2 className="city-mobile">
                 <button type="submit" className="btn btn-primary">
-                  S
+                  <FontAwesomeIcon icon={faLocationArrow} />
                 </button>{" "}
                 San Francisco{" "}
               </h2>
             </div>
             {/*Icon Mobile*/}
             <div className="col-12 col-bor">
-              <div className="icon-mobile">O</div>
+              <div className="icon-mobile">
+                <FontAwesomeIcon icon={faSun} />
+              </div>
             </div>
             {/*Temperature Mobile*/}
             <div className="col-12 col-bor ">
@@ -50,13 +54,14 @@ export default function TemperatureMobile(promps) {
               <div className="row">
                 <div className="col-6 col-bor">
                   <h2 className="humidity">
-                    <FontAwesomeIcon icon={faTint} /> 80%
+                    <FontAwesomeIcon icon={faTint} /> {promps.defaultHumidity}%
                   </h2>
                 </div>
                 <div className="col-6 col-bor">
                   <h2 className="wind">
                     {" "}
-                    <FontAwesomeIcon icon={faWind} /> 5 km/h
+                    <FontAwesomeIcon icon={faWind} />
+                    {Math.round(promps.defaultWind)} km/h
                   </h2>
                 </div>
               </div>

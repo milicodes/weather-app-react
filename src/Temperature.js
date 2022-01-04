@@ -10,7 +10,7 @@ import { faTint } from "@fortawesome/free-solid-svg-icons";
 import { faWind } from "@fortawesome/free-solid-svg-icons";
 import { faSun } from "@fortawesome/free-solid-svg-icons";
 import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+
 
 export default function Temperature() {
   // State for realtime API weather
@@ -98,7 +98,11 @@ export default function Temperature() {
               </div>
             </div>
             {/*Left Section Mobile */}
-            <TemperatureMobile defaultTemperature={weatherData.temp} />
+            <TemperatureMobile
+              defaultTemperature={weatherData.temp}
+              defaultHumidity={weatherData.humidity}
+              defaultWind={weatherData.wind}
+            />
             {/*Right container from main container*/}
             <div className="col-12  d-none d-lg-block">
               {/*Right container for Weather*/}

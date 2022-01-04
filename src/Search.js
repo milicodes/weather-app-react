@@ -47,7 +47,7 @@ export default function Search() {
                       </div>
                       <div className="col-4 d-md-none d-block col-bor">
                         <button type="submit" className="btn btn-primary">
-                          S
+                          <FontAwesomeIcon icon={faSearch} />
                         </button>
                       </div>
                     </div>
