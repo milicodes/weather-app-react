@@ -121,7 +121,7 @@ export default function Temperature() {
   } else {
     let city = "Tokyo";
     const apiKey = "62a816282d3b51b7451838a6b7b63934";
-    let apiURL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiURL).then(handleResponse);
     return "Loading...";
   }
