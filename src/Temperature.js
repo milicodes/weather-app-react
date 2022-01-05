@@ -14,20 +14,16 @@ import ReactAnimatedWeather from "react-animated-weather";
 
 export default function Temperature() {
   // State for realtime API weather
-  const [ready, setReady] = useState(false);
-  const [weatherData, setWeatherData] = useState({});
+  const [weatherData, setWeatherData] = useState({ready: false});
   function handleResponse(response) {
     setWeatherData({
+      ready: true,
       temp: response.data.main.temp,
       city: response.data.name,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
       weather: response.data.weather[0].main,
     });
-
-
-    console.log(response.data.weather[0].main);
-    setReady(true);
   }
 
   const defaults = {
@@ -36,7 +32,7 @@ export default function Temperature() {
     size: 120,
     animate: true,
   };
-  if (ready) {
+  if (weatherData.ready) {
     return (
       <div className="Temperature margin-top">
         {/*Main container */}
