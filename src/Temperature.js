@@ -8,8 +8,8 @@ import ForecastMobile from "./ForecastMobile";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTint } from "@fortawesome/free-solid-svg-icons";
 import { faWind } from "@fortawesome/free-solid-svg-icons";
-import { faSun } from "@fortawesome/free-solid-svg-icons";
 import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
+import ReactAnimatedWeather from "react-animated-weather";
 
 
 export default function Temperature() {
@@ -22,9 +22,20 @@ export default function Temperature() {
       city: response.data.name,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
+      weather: response.data.weather[0].main,
     });
+
+
+    console.log(response.data.weather[0].main);
     setReady(true);
   }
+
+  const defaults = {
+    icon: "CLEAR_DAY",
+    color: "goldenrod",
+    size: 120,
+    animate: true,
+  };
   if (ready) {
     return (
       <div className="Temperature margin-top">
@@ -44,7 +55,7 @@ export default function Temperature() {
                       >
                         <FontAwesomeIcon icon={faLocationArrow} />
                       </button>
-                      San Francisco
+                      {weatherData.city}
                     </h2>
                   </div>
                   <div className="col-6 col-bor"></div>
@@ -57,7 +68,12 @@ export default function Temperature() {
                   {/*Icon*/}
                   <div className="col-6 col-bor">
                     <div className="icon">
-                      <FontAwesomeIcon icon={faSun} />
+                      <ReactAnimatedWeather
+                        icon={defaults.icon}
+                        color={defaults.color}
+                        size={defaults.size}
+                        animate={defaults.animate}
+                      />
                     </div>
                   </div>
 
@@ -77,7 +93,9 @@ export default function Temperature() {
                         </button>
                       </div>
                       <div className="col-6 col-bor">
-                        <h2 className="weather-name">Sunny</h2>
+                        <h2 className="weather-name text-capitalize">
+                          {weatherData.weather}
+                        </h2>
                       </div>
                       <div className="col-6 col-bor">
                         <h3 className="humidity">
@@ -102,6 +120,7 @@ export default function Temperature() {
               defaultTemperature={weatherData.temp}
               defaultHumidity={weatherData.humidity}
               defaultWind={weatherData.wind}
+              defaultWeather={weatherData.weather}
             />
             {/*Right container from main container*/}
             <div className="col-12  d-none d-lg-block">

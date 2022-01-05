@@ -17,10 +17,11 @@ button.btn-desk {
 
 .temperature-number {
     font-size: 90px;
+    padding: 1.1rem 0 0 0;
 }
 
 .icon {
-    font-size: 100px;
+    padding: 0.8rem 0 0 0;
 }
 
 .city {

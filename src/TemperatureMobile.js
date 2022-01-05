@@ -5,8 +5,16 @@ import { faTint } from "@fortawesome/free-solid-svg-icons";
 import { faWind } from "@fortawesome/free-solid-svg-icons";
 import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 import { faSun } from "@fortawesome/free-solid-svg-icons";
+import ReactAnimatedWeather from "react-animated-weather";
 
 export default function TemperatureMobile(promps) {
+
+   const defaults = {
+     icon: "CLEAR_DAY",
+     color: "goldenrod",
+     size: 100,
+     animate: true,
+   };
 
     return (
       <div className="TemperatureMobile d-block d-lg-none">
@@ -25,7 +33,12 @@ export default function TemperatureMobile(promps) {
             {/*Icon Mobile*/}
             <div className="col-12 col-bor">
               <div className="icon-mobile">
-                <FontAwesomeIcon icon={faSun} />
+                <ReactAnimatedWeather
+                  icon={defaults.icon}
+                  color={defaults.color}
+                  size={defaults.size}
+                  animate={defaults.animate}
+                />
               </div>
             </div>
             {/*Temperature Mobile*/}
@@ -47,7 +60,7 @@ export default function TemperatureMobile(promps) {
             </div>
             {/*Weather Mobile*/}
             <div className="col-12 col-bor ">
-              <h2 className="weather-mobile">Sunny</h2>
+              <h2 className="weather-mobile">{promps.defaultWeather}</h2>
             </div>
             {/*Description Mobile*/}
             <div className="container">
