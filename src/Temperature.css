@@ -10,6 +10,11 @@ button.btn-desk {
     margin: 0 0 0 1rem;
 }
 
+h5.date-desktop {
+    text-align: left;
+    margin: 0 0 0 1rem;
+}
+
 .margin-sides {
     padding: 0 6rem;
 }
@@ -23,6 +28,8 @@ button.btn-desk {
 .icon {
     padding: 0.8rem 0 0 0;
 }
+
+
 
 .city {
     text-align: left;

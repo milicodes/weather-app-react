@@ -23,9 +23,9 @@ export default function Temperature() {
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
       weather: response.data.weather[0].main,
+      date: "Today, 07:00",
     });
   }
-
   const defaults = {
     icon: "CLEAR_DAY",
     color: "goldenrod",
@@ -43,6 +43,7 @@ export default function Temperature() {
               {/*Left Container Desktop*/}
               <div className="container margin-sides col-bor">
                 <div className="row">
+                  {/*City*/}
                   <div className="col-6 col-bor">
                     <h2 className="city">
                       <button
@@ -53,6 +54,11 @@ export default function Temperature() {
                       </button>
                       {weatherData.city}
                     </h2>
+                  </div>
+                  <div className="col-6 col-bor"></div>
+                  {/*Date*/}
+                  <div className="col-6 col-bor">
+                    <h5 className="date-desktop">{weatherData.date}</h5>
                   </div>
                   <div className="col-6 col-bor"></div>
                   {/*Temperature*/}
@@ -117,6 +123,8 @@ export default function Temperature() {
               defaultHumidity={weatherData.humidity}
               defaultWind={weatherData.wind}
               defaultWeather={weatherData.weather}
+              defaultCity={weatherData.city}
+              defaultDate={weatherData.date}
             />
             {/*Right container from main container*/}
             <div className="col-12  d-none d-lg-block">
@@ -135,7 +143,7 @@ export default function Temperature() {
     );
   } else {
     let city = "Tokyo";
-    const apiKey = "62a816282d3b51b7451838a6b7b63934";
+    const apiKey = "a286ae6c0946e11743cd344706fe7fab";
     let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiURL).then(handleResponse);
     return "Loading...";
