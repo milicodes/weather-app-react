@@ -10,6 +10,7 @@ import { faTint } from "@fortawesome/free-solid-svg-icons";
 import { faWind } from "@fortawesome/free-solid-svg-icons";
 import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 import ReactAnimatedWeather from "react-animated-weather";
+import Date from "./Date";
 
 
 export default function Temperature() {
