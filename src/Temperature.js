@@ -10,7 +10,7 @@ import { faTint } from "@fortawesome/free-solid-svg-icons";
 import { faWind } from "@fortawesome/free-solid-svg-icons";
 import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 import ReactAnimatedWeather from "react-animated-weather";
-import Date from "./Date";
+import MainDate from "./MainDate";
 
 
 export default function Temperature() {
@@ -24,7 +24,7 @@ export default function Temperature() {
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
       weather: response.data.weather[0].main,
-      date: "Today, 07:00",
+      date: new Date(response.data.dt * 1000),
     });
   }
   const defaults = {
@@ -59,7 +59,7 @@ export default function Temperature() {
                   <div className="col-6 col-bor"></div>
                   {/*Date*/}
                   <div className="col-6 col-bor">
-                    <h5 className="date-desktop">{weatherData.date}</h5>
+                    <h5 className="date-desktop"><MainDate date={weatherData.date} /></h5>
                   </div>
                   <div className="col-6 col-bor"></div>
                   {/*Temperature*/}

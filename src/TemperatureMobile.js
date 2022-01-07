@@ -33,7 +33,7 @@ export default function TemperatureMobile(promps) {
             {/*City Mobile*/}
             <div className="col-12 col-bor ">
               <h5 className="date-mobile">
-                {promps.defaultDate}{" "}
+               {" "}
               </h5>
             </div>
             {/*Icon Mobile*/}
