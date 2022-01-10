@@ -8,8 +8,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTint } from "@fortawesome/free-solid-svg-icons";
 import { faWind } from "@fortawesome/free-solid-svg-icons";
 import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
-import ReactAnimatedWeather from "react-animated-weather";
 import MainDate from "./MainDate";
+import Icon from "./Icon";
 
 export default function Temperature(promps) {
 
@@ -50,13 +50,10 @@ export default function Temperature(promps) {
                 {/*Icon*/}
                 <div className="col-6 col-bor">
                   <div className="icon">
-                    <img src={promps.data.iconURL} alt="Weather Icon" ></img>
-                    {/* <ReactAnimatedWeather
-                      icon={defaults.icon}
-                      color={defaults.color}
-                      size={defaults.size}
-                      animate={defaults.animate}
-                  /> */}
+                    <Icon
+                      defaultIcon={promps.data.icon}
+                      description={promps.data.description}
+                    />
                   </div>
                 </div>
 
@@ -107,6 +104,8 @@ export default function Temperature(promps) {
             defaultCity={promps.data.city}
             defaultDate={promps.data.date}
             date={promps.data.date}
+            defaultIcon={promps.data.icon}
+            description={promps.data.description}
           />
           {/*Right container from main container*/}
           <div className="col-12  d-none d-lg-block">

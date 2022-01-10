@@ -18,7 +18,7 @@ export default function Search(promps) {
       humidity: response.data.main.humidity,
       weather: response.data.weather[0].main,
       date: new Date(response.data.dt * 1000),
-      iconURL: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
     });
   }
 
@@ -90,6 +90,7 @@ export default function Search(promps) {
                             className="form-control"
                             placeholder="Type a city"
                             aria-label="Type a city"
+                            onChange={handleChangeCity}
                           />
                         </div>
                         <div className="col-4 d-md-none d-block">

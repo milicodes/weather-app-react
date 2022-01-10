@@ -3,6 +3,7 @@ import "./TemperatureMobile.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTint } from "@fortawesome/free-solid-svg-icons";
 import { faWind } from "@fortawesome/free-solid-svg-icons";
+import Icon from "./Icon.js"
 import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 import ReactAnimatedWeather from "react-animated-weather";
 
@@ -54,12 +55,7 @@ export default function TemperatureMobile(promps) {
           {/*Icon Mobile*/}
           <div className="col-12 col-bor">
             <div className="icon-mobile">
-              <ReactAnimatedWeather
-                icon={defaults.icon}
-                color={defaults.color}
-                size={defaults.size}
-                animate={defaults.animate}
-              />
+              <Icon defaultIcon={promps.defaultIcon}/>
             </div>
           </div>
           {/*Temperature Mobile*/}
