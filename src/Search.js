@@ -5,9 +5,10 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import Temperature from "./Temperature";
 import axios from "axios";
 
-export default function Search() {
+export default function Search(promps) {
   // State for realtime API weather
   const [weatherData, setWeatherData] = useState({ ready: false });
+  const [city, setCity] = useState(promps.defaultData);
   function handleResponse(response) {
     setWeatherData({
       ready: true,
@@ -17,14 +18,36 @@ export default function Search() {
       humidity: response.data.main.humidity,
       weather: response.data.weather[0].main,
       date: new Date(response.data.dt * 1000),
+      iconURL: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
 
-  function handleSubmit(event) {
-    event.preventDefault();
+  // Icon NPM
+
+   const defaults = {
+     icon: "CLEAR_DAY",
+     color: "goldenrod",
+     size: 120,
+     animate: true,
+   };
+
+  // API Call in real time with search engine
+  function searchCity() {
+   const apiKey = "a286ae6c0946e11743cd344706fe7fab";
+    let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiURL).then(handleResponse);
   }
 
-  function handleChangeCity(event) {}
+  // Form submition in real time + API Call
+  function handleSubmit(event) {
+    event.preventDefault();
+    searchCity();
+  }
+
+  //Selecting value as search engine
+  function handleChangeCity(event) {
+    setCity(event.target.value);
+  }
 
   if (weatherData.ready) {
     return (
@@ -87,10 +110,7 @@ export default function Search() {
       </div>
     );
   } else {
-    let city = "Tokyo";
-    const apiKey = "a286ae6c0946e11743cd344706fe7fab";
-    let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-    axios.get(apiURL).then(handleResponse);
+    searchCity();
     return "Loading...";
   }
 }

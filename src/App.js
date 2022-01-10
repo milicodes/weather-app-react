@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       {/*Search bar */}
-      <Search />
+      <Search defaultData="Seoul"/>
     </div>
   );
 }

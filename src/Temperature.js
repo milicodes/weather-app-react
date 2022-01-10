@@ -12,12 +12,7 @@ import ReactAnimatedWeather from "react-animated-weather";
 import MainDate from "./MainDate";
 
 export default function Temperature(promps) {
-  const defaults = {
-    icon: "CLEAR_DAY",
-    color: "goldenrod",
-    size: 120,
-    animate: true,
-  };
+
 
   return (
     <div className="Temperature margin-top">
@@ -55,12 +50,13 @@ export default function Temperature(promps) {
                 {/*Icon*/}
                 <div className="col-6 col-bor">
                   <div className="icon">
-                    <ReactAnimatedWeather
+                    <img src={promps.data.iconURL} alt="Weather Icon" ></img>
+                    {/* <ReactAnimatedWeather
                       icon={defaults.icon}
                       color={defaults.color}
                       size={defaults.size}
                       animate={defaults.animate}
-                    />
+                  /> */}
                   </div>
                 </div>
 
