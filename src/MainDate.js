@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function MainDate(promps) {
-    console.log(promps.date)
     let Days = [
         "Sunday",
         "Monday",

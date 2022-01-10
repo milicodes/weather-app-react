@@ -59,7 +59,9 @@ export default function Temperature() {
                   <div className="col-6 col-bor"></div>
                   {/*Date*/}
                   <div className="col-6 col-bor">
-                    <h5 className="date-desktop"><MainDate date={weatherData.date} /></h5>
+                    <h5 className="date-desktop">
+                      <MainDate date={weatherData.date} />
+                    </h5>
                   </div>
                   <div className="col-6 col-bor"></div>
                   {/*Temperature*/}
@@ -126,6 +128,7 @@ export default function Temperature() {
               defaultWeather={weatherData.weather}
               defaultCity={weatherData.city}
               defaultDate={weatherData.date}
+              date={weatherData.date}
             />
             {/*Right container from main container*/}
             <div className="col-12  d-none d-lg-block">
