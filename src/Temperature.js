@@ -10,7 +10,6 @@ import { faWind } from "@fortawesome/free-solid-svg-icons";
 import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 import MainDate from "./MainDate";
 import Icon from "./Icon";
-import UnitConvertion from "./UnitConvertion";
 
 export default function Temperature(promps) {
   const [unit, setUnit] = useState("celcius");
@@ -31,12 +30,12 @@ export default function Temperature(promps) {
     return (
       <div className="Temperature margin-top">
         {/*Main container */}
-        <div className="container col-bor">
+        <div className="container">
           <div className="row">
             {/*Left Section Desktop*/}
-            <div className="col-12 d-none d-lg-block">
+            <div className="col-12 d-none d-lg-block margin-sides">
               {/*Left Container Desktop*/}
-              <div className="container margin-sides col-bor">
+              <div className="container col-bor">
                 <div className="row">
                   {/*City*/}
                   <div className="col-6 col-bor">
