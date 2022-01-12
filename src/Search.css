@@ -1,22 +1,25 @@
-
-
 div.margin-top {
-    margin: 1.4rem 0 0 0;
+  margin: 1.4rem 0 0 0;
 }
 
 div.space-desktop {
-    margin: 3rem 0 0 0;
+  margin: 3rem 0 0 0;
 }
 
 div.search-bar {
-    border: solid 4px #a03aff;
+  border: solid 4px #a03aff;
 }
 
-
 button.btn-desk {
-    margin: 0 0 0 1rem;
+  margin: 0 0 0 1rem;
+}
+
+button.btn-search {
+  background-color: #61509c75;
+  border: 1px solid #5d51ce36;
+  font-weight: 600;
 }
 
 div.margin-top-search-desktop {
-    margin: 4rem 0 0 0;
+  margin: 4rem 0 0 0;
 }

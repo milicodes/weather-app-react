@@ -65,7 +65,7 @@ export default function Search(promps) {
                         />
                       </div>
                       <div className="col-md-3 d-md-block d-none search-button">
-                        <button type="submit" className="btn btn-primary">
+                        <button type="submit" className="btn btn-primary btn-search">
                           <FontAwesomeIcon icon={faSearch} />
                         </button>
                       </div>
