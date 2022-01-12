@@ -35,7 +35,7 @@ export default function Temperature(promps) {
             {/*Left Section Desktop*/}
             <div className="col-12 d-none d-lg-block margin-sides">
               {/*Left Container Desktop*/}
-              <div className="container col-bor">
+              <div className="container main-container-gradient">
                 <div className="row">
                   {/*City*/}
                   <div className="col-6 col-bor">
@@ -78,12 +78,12 @@ export default function Temperature(promps) {
                     <div className="row">
                       {/*Unit convertion buttons*/}
                       <div className="col-6 col-bor">
-                        <button type="submit" className="btn  btn-primary">
+                        <button type="submit" className="btn btn-unit-celcius  btn-primary">
                           °C
                         </button>
                         <button
                           type="submit"
-                          className="btn btn-desk btn-primary"
+                          className="btn btn-desk btn-unit btn-primary"
                           onClick={handleFahrenheit}
                         >
                           °F
@@ -145,12 +145,12 @@ export default function Temperature(promps) {
         {" "}
         <div className="Temperature margin-top">
           {/*Main container */}
-          <div className="container col-bor">
+          <div className="container">
             <div className="row">
               {/*Left Section Desktop*/}
               <div className="col-12 d-none d-lg-block">
                 {/*Left Container Desktop*/}
-                <div className="container margin-sides col-bor">
+                <div className="container margin-sides">
                   <div className="row">
                     {/*City*/}
                     <div className="col-6 col-bor">

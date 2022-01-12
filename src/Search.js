@@ -22,15 +22,6 @@ export default function Search(promps) {
     });
   }
 
-  // Icon NPM
-
-   const defaults = {
-     icon: "CLEAR_DAY",
-     color: "goldenrod",
-     size: 120,
-     animate: true,
-   };
-
   // API Call in real time with search engine
   function searchCity() {
    const apiKey = "a286ae6c0946e11743cd344706fe7fab";
@@ -67,7 +58,7 @@ export default function Search(promps) {
                       <div className="col-md-4 d-md-block d-none">
                         <input
                           type="text"
-                          className="form-control"
+                          className="form-control form-background"
                           placeholder="Type a city"
                           aria-label="Type a city"
                           onChange={handleChangeCity}
