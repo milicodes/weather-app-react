@@ -38,7 +38,7 @@ export default function Temperature(promps) {
               <div className="container main-container-gradient">
                 <div className="row">
                   {/*City*/}
-                  <div className="col-6 col-bor">
+                  <div className="col-6">
                     <h2 className="city">
                       <button
                         type="submit"
@@ -49,22 +49,22 @@ export default function Temperature(promps) {
                       {promps.data.city}
                     </h2>
                   </div>
-                  <div className="col-6 col-bor"></div>
+                  <div className="col-6"></div>
                   {/*Date*/}
-                  <div className="col-6 col-bor">
+                  <div className="col-6">
                     <h5 className="date-desktop">
                       <MainDate date={promps.data.date} />
                     </h5>
                   </div>
-                  <div className="col-6 col-bor"></div>
+                  <div className="col-6"></div>
                   {/*Temperature*/}
-                  <div className="col-6 col-bor">
+                  <div className="col-6">
                     <h2 className="temperature-number">
                       {Math.round(promps.data.temp)}°
                     </h2>
                   </div>
                   {/*Icon*/}
-                  <div className="col-6 col-bor">
+                  <div className="col-6">
                     <div className="icon">
                       <Icon
                         defaultIcon={promps.data.icon}
@@ -77,7 +77,7 @@ export default function Temperature(promps) {
                   <div className="container">
                     <div className="row">
                       {/*Unit convertion buttons*/}
-                      <div className="col-6 col-bor">
+                      <div className="col-6">
                         <button type="submit" className="btn btn-unit-celcius  btn-primary">
                           °C
                         </button>
@@ -89,19 +89,19 @@ export default function Temperature(promps) {
                           °F
                         </button>
                       </div>
-                      <div className="col-6 col-bor">
+                      <div className="col-6">
                         <h2 className="weather-name text-capitalize">
                           {promps.data.weather}
                         </h2>
                       </div>
-                      <div className="col-6 col-bor">
+                      <div className="col-6">
                         <h3 className="humidity">
                           {" "}
                           <FontAwesomeIcon icon={faTint} />{" "}
                           {promps.data.humidity}%
                         </h3>
                       </div>
-                      <div className="col-6 col-bor">
+                      <div className="col-6">
                         <h3 className="wind">
                           <FontAwesomeIcon icon={faWind} />{" "}
                           {Math.round(promps.data.wind)} km/h
@@ -153,7 +153,7 @@ export default function Temperature(promps) {
                 <div className="container main-container-gradient">
                   <div className="row">
                     {/*City*/}
-                    <div className="col-6 col-bor">
+                    <div className="col-6">
                       <h2 className="city">
                         <button
                           type="submit"
@@ -164,22 +164,22 @@ export default function Temperature(promps) {
                         {promps.data.city}
                       </h2>
                     </div>
-                    <div className="col-6 col-bor"></div>
+                    <div className="col-6"></div>
                     {/*Date*/}
-                    <div className="col-6 col-bor">
+                    <div className="col-6">
                       <h5 className="date-desktop">
                         <MainDate date={promps.data.date} />
                       </h5>
                     </div>
-                    <div className="col-6 col-bor"></div>
+                    <div className="col-6"></div>
                     {/*Temperature*/}
-                    <div className="col-6 col-bor">
+                    <div className="col-6">
                       <h2 className="temperature-number">
                         {Math.round(fahrenheit())}°
                       </h2>
                     </div>
                     {/*Icon*/}
-                    <div className="col-6 col-bor">
+                    <div className="col-6">
                       <div className="icon">
                         <Icon
                           defaultIcon={promps.data.icon}
@@ -192,7 +192,7 @@ export default function Temperature(promps) {
                     <div className="container">
                       <div className="row">
                         {/*Unit convertion buttons*/}
-                        <div className="col-6 col-bor">
+                        <div className="col-6">
                           <button
                             type="submit"
                             className="btn  btn-primary btn-unit"
@@ -207,19 +207,19 @@ export default function Temperature(promps) {
                             °F
                           </button>
                         </div>
-                        <div className="col-6 col-bor">
+                        <div className="col-6">
                           <h2 className="weather-name text-capitalize">
                             {promps.data.weather}
                           </h2>
                         </div>
-                        <div className="col-6 col-bor">
+                        <div className="col-6">
                           <h3 className="humidity">
                             {" "}
                             <FontAwesomeIcon icon={faTint} />{" "}
                             {promps.data.humidity}%
                           </h3>
                         </div>
-                        <div className="col-6 col-bor">
+                        <div className="col-6">
                           <h3 className="wind">
                             <FontAwesomeIcon icon={faWind} />{" "}
                             {Math.round(promps.data.wind)} km/h
