@@ -26,7 +26,7 @@ export default function Icon(promps) {
       <div className="Icon">
         <ReactAnimatedWeather
           icon={codeMapping[promps.defaultIcon]}
-          color="white"
+          color="#ffffff"
           size={140}
           animate={true}
         />

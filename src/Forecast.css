@@ -5,3 +5,8 @@
 .day-forecast-bot {
     margin: 0 0 3rem 0;
 }
+
+div.day-one {
+    background-color: #71ae2cc4;
+    border-radius: 30px;
+}

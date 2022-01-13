@@ -7,7 +7,7 @@ export default function Forecast() {
         <div className="row">
           <div className="col-2">
             {/*Forecast inside */}
-            <div className="container">
+            <div className="container day-one">
               <div className="row justify-content-center">
                 <h4 className="col-12 day-forecast-top">MON</h4>
                 <h4 className="col-12 icon-forecast">O</h4>
@@ -16,7 +16,7 @@ export default function Forecast() {
             </div>
           </div>
           <div className="col-2">
-            <div className="container">
+            <div className="container col-bor">
               <div className="row justify-content-center">
                 <h4 className="col-12 day-forecast-top">TUE</h4>
                 <h4 className="col-12 icon-forecast">O</h4>

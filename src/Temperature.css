@@ -1,61 +1,61 @@
 button.btn-desk {
-    margin: 0 0 0 1rem;
+  margin: 0 0 0 1rem;
 }
 
 h5.date-desktop {
-    text-align: left;
-    margin: 0 0 0 1rem;
+  text-align: left;
+  margin: 0 0 0 1rem;
 }
 
 div.main-container-gradient {
-    background-image:  linear-gradient(#00baee, #0072ff);
-    border-radius: 1rem;
-    box-shadow: rgba(255, 255, 255, 0.596) 0px 1px 1px 0px inset, rgba(60, 78, 180, 0.61) 0px 50px 100px -20px, rgba(48, 47, 124, 0.568) 0px 30px 60px -30px;
+  background-image: linear-gradient(#00baee, #0072ff);
+  border-radius: 1rem;
+  box-shadow: rgba(255, 255, 255, 0.596) 0px 1px 1px 0px inset,
+    rgba(60, 78, 180, 0.61) 0px 50px 100px -20px,
+    rgba(48, 47, 124, 0.568) 0px 30px 60px -30px;
 }
 
 button.btn-unit {
-    background-color: #ffffff54;
-    border: 1px solid #ffffff36;
-    font-size: 23px;
-    margin-left: 1.6rem;
-    font-weight: 600;
+  background-color: #ffffff54;
+  border: 1px solid #ffffff36;
+  font-size: 23px;
+  margin-left: 1.6rem;
+  font-weight: 600;
 }
 
 button.btn-unit-celcius {
-    background-color: #0041ce7a;
-    border: 1px solid #2d00f51a;
-    font-size: 23px;
-    margin-left: 1.6rem;
-    font-weight: 600;
+  background-color: #0041ce7a;
+  border: 1px solid #2d00f51a;
+  font-size: 23px;
+  margin-left: 1.6rem;
+  font-weight: 600;
 }
 
 .col-bor {
-   border: 3px solid orange; 
+  border: 3px solid orange;
 }
-
 
 .margin-sides {
-    padding: 0 6rem;
+  padding: 0 6rem;
 }
 
-
 .temperature-number {
-    font-size: 90px;
-    padding: 1.1rem 0 0 0;
+  font-size: 120px;
+  padding: 1.1rem 0 0 0;
+  background: -webkit-linear-gradient(#eee 40%, rgba(85, 173, 255, 0.877));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .icon {
-    padding: 0.8rem 0 0 0;
+  padding: 0.8rem 0 0 0;
 }
 
-
-
 .city {
-    text-align: left;
+  text-align: left;
 }
 
 .search-button {
-    text-align: left;
-    padding: 0 0 0 1rem;
+  text-align: left;
+  padding: 0 0 0 1rem;
 }
-
