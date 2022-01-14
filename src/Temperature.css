@@ -42,7 +42,7 @@ h3.humidity {
 }
 
 h3.wind {
-  padding: 0 5rem 0 0rem;
+  padding: 0 1rem 0 0rem;
 }
 
 .opacity-icon {
@@ -66,7 +66,7 @@ h3.wind {
 }
 
 .margin-sides {
-  padding: 0 12rem;
+  padding: 0 14rem;
 }
 
 .temperature-number {
