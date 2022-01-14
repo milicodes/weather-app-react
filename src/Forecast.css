@@ -7,6 +7,31 @@
 }
 
 div.day-one {
-    background-color: #71ae2cc4;
+    background: -webkit-linear-gradient( #DCE35B, #56ab2f);
+    border-radius: 30px;
+}
+
+div.day-two {
+    background: -webkit-linear-gradient(#92fe9d, #00c9ff);
+    border-radius: 30px;
+}
+
+div.day-three {
+    background: -webkit-linear-gradient( #c2e59c, #64b3f4);
+    border-radius: 30px;
+}
+
+div.day-four {
+    background: -webkit-linear-gradient( #91EAE4, #86A8E7);
+    border-radius: 30px;
+}
+
+div.day-five {
+     background: -webkit-linear-gradient( #A7BFE8, #6190E8);
+    border-radius: 30px;
+}
+
+div.day-six {
+    background: -webkit-linear-gradient( #8f94fb, #4e54c8);
     border-radius: 30px;
 }

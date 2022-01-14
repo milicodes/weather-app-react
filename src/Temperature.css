@@ -13,6 +13,7 @@ div.main-container-gradient {
   box-shadow: rgba(255, 255, 255, 0.596) 0px 1px 1px 0px inset,
     rgba(60, 78, 180, 0.61) 0px 50px 100px -20px,
     rgba(48, 47, 124, 0.568) 0px 30px 60px -30px;
+  margin: 0 0 2rem 0;
 }
 
 button.btn-unit {
@@ -21,6 +22,11 @@ button.btn-unit {
   font-size: 23px;
   margin-left: 1.6rem;
   font-weight: 600;
+  
+}
+
+button.btn {
+  box-shadow: rgba(17, 12, 46, 0.137) 0px 17px 20px 0px;
 }
 
 button.btn-unit-celcius {
@@ -31,12 +37,36 @@ button.btn-unit-celcius {
   font-weight: 600;
 }
 
+h3.humidity {
+  padding: 0 0 0 6rem;
+}
+
+h3.wind {
+  padding: 0 5rem 0 0rem;
+}
+
+.opacity-icon {
+  opacity: 60%;
+}
+
+.weather-name {
+  font-weight: 600;
+  margin: 1rem 0 1rem 0rem;
+  opacity: 80%;
+}
+
+.description-size {
+  font-size: 25px;
+  margin: 0 0 1rem 0;
+}
+
+
 .col-bor {
   border: 3px solid orange;
 }
 
 .margin-sides {
-  padding: 0 6rem;
+  padding: 0 12rem;
 }
 
 .temperature-number {

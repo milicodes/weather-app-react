@@ -78,7 +78,10 @@ export default function Temperature(promps) {
                     <div className="row">
                       {/*Unit convertion buttons*/}
                       <div className="col-6">
-                        <button type="submit" className="btn btn-unit-celcius  btn-primary">
+                        <button
+                          type="submit"
+                          className="btn btn-unit-celcius  btn-primary"
+                        >
                           °C
                         </button>
                         <button
@@ -94,16 +97,24 @@ export default function Temperature(promps) {
                           {promps.data.weather}
                         </h2>
                       </div>
-                      <div className="col-6">
-                        <h3 className="humidity">
+                      <div className="col-3"></div>
+                      <div className="col-3"></div>
+                      <div className="col-3">
+                        <h3 className="humidity description-size">
                           {" "}
-                          <FontAwesomeIcon icon={faTint} />{" "}
+                          <FontAwesomeIcon
+                            icon={faTint}
+                            className="opacity-icon"
+                          />{" "}
                           {promps.data.humidity}%
                         </h3>
                       </div>
-                      <div className="col-6">
-                        <h3 className="wind">
-                          <FontAwesomeIcon icon={faWind} />{" "}
+                      <div className="col-3">
+                        <h3 className="wind description-size">
+                          <FontAwesomeIcon
+                            icon={faWind}
+                            className="opacity-icon"
+                          />{" "}
                           {Math.round(promps.data.wind)} km/h
                         </h3>
                       </div>
