@@ -1,3 +1,19 @@
+button.btn-unit-celcius-mobile {
+  background-color: #0041ce7a;
+  border: 1px solid #2d00f51a;
+  font-size: 23px;
+  margin-left: 1.6rem;
+  font-weight: 600;  
+  margin: 0 0 0 2rem;
+}
+
+button.btn-unit-mobile {
+  background-color: #ffffff54;
+  border: 1px solid #ffffff36;
+  font-size: 23px;
+  font-weight: 600;
+  
+}
 .temperature-number-mobile {
     font-size: 80px;
 }
@@ -5,3 +21,14 @@
 .icon-mobile {
     padding: 0.8rem 0 0 0;
 }
+
+.container-gradient {
+    background-image: linear-gradient(#00baee, #0072ff);
+  box-shadow: rgba(255, 255, 255, 0.596) 0px 1px 1px 0px inset,
+    rgba(60, 78, 180, 0.61) 0px 50px 100px -20px,
+    rgba(48, 47, 124, 0.568) 0px 30px 60px -30px;
+  margin: 0 0 2rem 0;
+    border-radius: 50px;
+}
+
+

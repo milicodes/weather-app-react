@@ -4,7 +4,7 @@ button.btn-desk {
 
 h5.date-desktop {
   text-align: left;
-  margin: 0 0 0 1rem;
+  margin: 0.5rem;
 }
 
 div.main-container-gradient {
@@ -38,7 +38,11 @@ button.btn-unit-celcius {
 }
 
 h3.humidity {
-  padding: 0 0 0 6rem;
+  padding: 0 0 0 3rem;
+}
+
+h2.city {
+  margin-top: 1rem;
 }
 
 h3.wind {
@@ -49,6 +53,12 @@ h3.wind {
   opacity: 60%;
 }
 
+
+.border-date {
+  border-radius: 30px;
+  border: 0.5px solid #ffffff9f ;
+  margin-left: 1rem;
+}
 .weather-name {
   font-weight: 600;
   margin: 1rem 0 1rem 0rem;

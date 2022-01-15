@@ -63,42 +63,48 @@ export default function TemperatureMobile(promps) {
                 {promps.defaultCity}{" "}
               </h2>
             </div>
-            {/*Date Mobile*/}
-            <div className="col-12 col-bor ">
+            <div className="col-3 col-bor"></div>
+            <div className="col-6 date-margin-mobile col-bor">
               <h5 className="date-mobile">
                 {day} {hours}:{minutes}
               </h5>
             </div>
-            {/*Icon Mobile*/}
-            <div className="col-12 col-bor">
-              <div className="icon-mobile">
-                <Icon defaultIcon={promps.defaultIcon} />
+            <div className="col-3 col-bor"></div>
+            {/*Gradient Container*/}
+            <div className="container-fluid container-gradient">
+              <div className="row">
+                {/*Icon Mobile*/}
+                <div className="col-12">
+                  <div className="icon-mobile">
+                    <Icon defaultIcon={promps.defaultIcon} />
+                  </div>
+                </div>
+                {/*Temperature Mobile*/}
+                <div className="col-12">
+                  <h2 className="temperature-number-mobile">
+                    {Math.round(promps.defaultTemperature)}°
+                  </h2>
+                </div>
+                {/*Weather Mobile*/}
+                <div className="col-12 col-bor ">
+                  <h2 className="weather-mobile">{promps.defaultWeather}</h2>
+                </div>
+                {/*Unit convertion Mobile*/}
+                <div className="col-6 col-bor ">
+                  <button type="submit" className="btn btn-unit-celcius-mobile btn-primary">
+                    °C
+                  </button>
+                </div>
+                <div className="col-6 col-bor">
+                  <button
+                    type="submit"
+                    className="btn btn-unit-mobile btn-primary"
+                    onClick={handleFahrenheit}
+                  >
+                    °F
+                  </button>
+                </div>
               </div>
-            </div>
-            {/*Temperature Mobile*/}
-            <div className="col-12 col-bor ">
-              <h2 className="temperature-number-mobile">
-                {Math.round(promps.defaultTemperature)}°
-              </h2>
-            </div>
-            {/*Unit convertion Mobile*/}
-            <div className="col-6 col-bor ">
-              <button type="submit" className="btn btn-primary">
-                °C
-              </button>
-            </div>
-            <div className="col-6 col-bor">
-              <button
-                type="submit"
-                className="btn btn-primary"
-                onClick={handleFahrenheit}
-              >
-                °F
-              </button>
-            </div>
-            {/*Weather Mobile*/}
-            <div className="col-12 col-bor ">
-              <h2 className="weather-mobile">{promps.defaultWeather}</h2>
             </div>
             {/*Description Mobile*/}
             <div className="container">
@@ -125,7 +131,7 @@ export default function TemperatureMobile(promps) {
     return (
       <div className="TemperatureMobile d-block d-lg-none">
         {/*Left Container */}
-        <div className="container-fluid d-block d-lg-none col-bor">
+        <div className="container-fluid d-block d-lg-none">
           <div className="row margin-temperature-mobile">
             {/*City Mobile*/}
             <div className="col-12 col-bor ">
@@ -137,11 +143,13 @@ export default function TemperatureMobile(promps) {
               </h2>
             </div>
             {/*Date Mobile*/}
-            <div className="col-12 col-bor ">
+            <div className="col-3 col-bor"></div>
+            <div className="col-6 date-margin-mobile col-bor">
               <h5 className="date-mobile">
                 {day} {hours}:{minutes}
               </h5>
             </div>
+            <div className="col-3 col-bor"></div>
             {/*Icon Mobile*/}
             <div className="col-12 col-bor">
               <div className="icon-mobile">

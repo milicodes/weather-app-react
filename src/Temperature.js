@@ -51,7 +51,7 @@ export default function Temperature(promps) {
                   </div>
                   <div className="col-6"></div>
                   {/*Date*/}
-                  <div className="col-6">
+                  <div className="col-auto border-date">
                     <h5 className="date-desktop">
                       <MainDate date={promps.data.date} />
                     </h5>
@@ -177,7 +177,7 @@ export default function Temperature(promps) {
                     </div>
                     <div className="col-6"></div>
                     {/*Date*/}
-                    <div className="col-6">
+                    <div className="col-auto border-date">
                       <h5 className="date-desktop">
                         <MainDate date={promps.data.date} />
                       </h5>
@@ -223,16 +223,24 @@ export default function Temperature(promps) {
                             {promps.data.weather}
                           </h2>
                         </div>
-                        <div className="col-6">
-                          <h3 className="humidity">
+                        <div className="col-3"></div>
+                        <div className="col-3"></div>
+                        <div className="col-3">
+                          <h3 className="humidity description-size">
                             {" "}
-                            <FontAwesomeIcon icon={faTint} />{" "}
+                            <FontAwesomeIcon
+                              icon={faTint}
+                              className="opacity-icon"
+                            />{" "}
                             {promps.data.humidity}%
                           </h3>
                         </div>
-                        <div className="col-6">
-                          <h3 className="wind">
-                            <FontAwesomeIcon icon={faWind} />{" "}
+                        <div className="col-3">
+                          <h3 className="wind description-size">
+                            <FontAwesomeIcon
+                              icon={faWind}
+                              className="opacity-icon"
+                            />{" "}
                             {Math.round(promps.data.wind)} km/h
                           </h3>
                         </div>

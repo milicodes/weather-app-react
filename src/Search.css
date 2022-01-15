@@ -20,6 +20,10 @@ button.btn-search {
   font-weight: 600;
 }
 
+.padding-left {
+  padding: 0 0 0 4rem;
+}
+
 div.margin-top-search-desktop {
   margin: 4rem 0 0 0;
 }
