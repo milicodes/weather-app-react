@@ -12,6 +12,7 @@ import MainDate from "./MainDate";
 import Icon from "./Icon";
 
 export default function Temperature(promps) {
+
   const [unit, setUnit] = useState("celcius");
   function handleFahrenheit(event) {
     event.preventDefault();
@@ -60,7 +61,7 @@ export default function Temperature(promps) {
                   {/*Temperature*/}
                   <div className="col-6">
                     <h2 className="temperature-number">
-                      {Math.round(promps.data.temp)}°
+                      {Math.round(promps.data.temp)}° 
                     </h2>
                   </div>
                   {/*Icon*/}

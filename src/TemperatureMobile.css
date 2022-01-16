@@ -16,6 +16,12 @@ button.btn-unit-mobile {
     font-size: 110px;
 }
 
+.date-margin-mobile {
+  border: 0.5px solid #ffffffa1;
+  border-radius: 30px;
+  padding: 0.4rem;
+}
+
 .margin-buttons-left-mobile {
   margin: 1rem 0 1rem 0;
   padding: 0 0 0 3rem;

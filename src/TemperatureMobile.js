@@ -55,13 +55,14 @@ export default function TemperatureMobile(promps) {
                 {promps.defaultCity}{" "}
               </h2>
             </div>
-            <div className="col-3 col-bor"></div>
+            <div className="col-3"></div>
+            {/*Date mobile*/}
             <div className="col-6 date-margin-mobile col-bor">
               <h5 className="date-mobile">
                 {day} {hours}:{minutes}
               </h5>
             </div>
-            <div className="col-3 col-bor"></div>
+            <div className="col-3"></div>
             {/*Gradient Container*/}
             <div className="container-fluid container-gradient">
               <div className="row">
@@ -83,7 +84,10 @@ export default function TemperatureMobile(promps) {
                 </div>
                 {/*Unit convertion Mobile*/}
                 <div className="col-6 margin-buttons-left-mobile ">
-                  <button type="submit" className="btn btn-unit-celcius-mobile btn-primary">
+                  <button
+                    type="submit"
+                    className="btn btn-unit-celcius-mobile btn-primary"
+                  >
                     °C
                   </button>
                 </div>
