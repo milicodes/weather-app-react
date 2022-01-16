@@ -50,7 +50,7 @@ export default function Search(promps) {
             <div className="col-sm">
               {/* Form */}
               <form onSubmit={handleSubmit}>
-                <div className="container padding-left col-bor">
+                <div className="container padding-left">
                   <div className="row">
                     {/* (displayed for desktop) */}
                     <div className="input-group margin-top">

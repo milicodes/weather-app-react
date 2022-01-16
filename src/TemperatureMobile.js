@@ -5,7 +5,6 @@ import { faTint } from "@fortawesome/free-solid-svg-icons";
 import { faWind } from "@fortawesome/free-solid-svg-icons";
 import Icon from "./Icon.js";
 import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
-import ReactAnimatedWeather from "react-animated-weather";
 
 export default function TemperatureMobile(promps) {
   let Days = [
@@ -24,13 +23,6 @@ export default function TemperatureMobile(promps) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
-
-  const defaults = {
-    icon: "CLEAR_DAY",
-    color: "goldenrod",
-    size: 100,
-    animate: true,
-  };
 
   const [unit, setUnit] = useState("celcius");
 
@@ -86,16 +78,16 @@ export default function TemperatureMobile(promps) {
                   </h2>
                 </div>
                 {/*Weather Mobile*/}
-                <div className="col-12 col-bor ">
+                <div className="col-12 ">
                   <h2 className="weather-mobile">{promps.defaultWeather}</h2>
                 </div>
                 {/*Unit convertion Mobile*/}
-                <div className="col-6 col-bor ">
+                <div className="col-6 margin-buttons-left-mobile ">
                   <button type="submit" className="btn btn-unit-celcius-mobile btn-primary">
                     °C
                   </button>
                 </div>
-                <div className="col-6 col-bor">
+                <div className="col-6 margin-buttons-right-mobile">
                   <button
                     type="submit"
                     className="btn btn-unit-mobile btn-primary"
@@ -134,7 +126,7 @@ export default function TemperatureMobile(promps) {
         <div className="container-fluid d-block d-lg-none">
           <div className="row margin-temperature-mobile">
             {/*City Mobile*/}
-            <div className="col-12 col-bor ">
+            <div className="col-12">
               <h2 className="city-mobile">
                 <button type="submit" className="btn btn-primary">
                   <FontAwesomeIcon icon={faLocationArrow} />
@@ -150,36 +142,44 @@ export default function TemperatureMobile(promps) {
               </h5>
             </div>
             <div className="col-3 col-bor"></div>
-            {/*Icon Mobile*/}
-            <div className="col-12 col-bor">
-              <div className="icon-mobile">
-                <Icon defaultIcon={promps.defaultIcon} />
+            {/*Gradient Container*/}
+            <div className="container-fluid container-gradient">
+              <div className="row">
+                {/*Icon Mobile*/}
+                <div className="col-12">
+                  <div className="icon-mobile">
+                    <Icon defaultIcon={promps.defaultIcon} />
+                  </div>
+                </div>
+                {/*Temperature Mobile*/}
+                <div className="col-12 ">
+                  <h2 className="temperature-number-mobile">
+                    {Math.round(fahrenheit())}°
+                  </h2>
+                </div>
+                {/*Weather Mobile*/}
+                <div className="col-12">
+                  <h2 className="weather-mobile">{promps.defaultWeather}</h2>
+                </div>
+                {/*Unit convertion Mobile*/}
+                <div className="col-6 margin-buttons-left-mobile">
+                  <button
+                    type="submit"
+                    className="btn btn-primary btn-unit-mobile"
+                    onClick={handleCelcius}
+                  >
+                    °C
+                  </button>
+                </div>
+                <div className="col-6  margin-buttons-right-mobile">
+                  <button
+                    type="submit"
+                    className="btn btn-primary btn-unit-celcius-mobile"
+                  >
+                    °F
+                  </button>
+                </div>
               </div>
-            </div>
-            {/*Temperature Mobile*/}
-            <div className="col-12 col-bor ">
-              <h2 className="temperature-number-mobile">
-                {Math.round(fahrenheit())}°
-              </h2>
-            </div>
-            {/*Unit convertion Mobile*/}
-            <div className="col-6 col-bor ">
-              <button
-                type="submit"
-                className="btn btn-primary"
-                onClick={handleCelcius}
-              >
-                °C
-              </button>
-            </div>
-            <div className="col-6 col-bor">
-              <button type="submit" className="btn btn-primary">
-                °F
-              </button>
-            </div>
-            {/*Weather Mobile*/}
-            <div className="col-12 col-bor ">
-              <h2 className="weather-mobile">{promps.defaultWeather}</h2>
             </div>
             {/*Description Mobile*/}
             <div className="container">

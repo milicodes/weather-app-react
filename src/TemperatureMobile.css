@@ -1,21 +1,36 @@
 button.btn-unit-celcius-mobile {
   background-color: #0041ce7a;
   border: 1px solid #2d00f51a;
-  font-size: 23px;
-  margin-left: 1.6rem;
+  font-size: 30px;
   font-weight: 600;  
-  margin: 0 0 0 2rem;
 }
 
 button.btn-unit-mobile {
   background-color: #ffffff54;
   border: 1px solid #ffffff36;
-  font-size: 23px;
+  font-size: 30px;
   font-weight: 600;
   
 }
 .temperature-number-mobile {
-    font-size: 80px;
+    font-size: 110px;
+}
+
+.margin-buttons-left-mobile {
+  margin: 1rem 0 1rem 0;
+  padding: 0 0 0 3rem;
+}
+
+.margin-buttons-right-mobile {
+  margin: 1rem 0 1rem 0;
+  padding: 0 3rem 0 0;
+}
+
+
+.weather-mobile {
+  font-size: 35px;
+  font-weight: 600;
+  opacity: 80%;
 }
 
 .icon-mobile {
@@ -27,7 +42,7 @@ button.btn-unit-mobile {
   box-shadow: rgba(255, 255, 255, 0.596) 0px 1px 1px 0px inset,
     rgba(60, 78, 180, 0.61) 0px 50px 100px -20px,
     rgba(48, 47, 124, 0.568) 0px 30px 60px -30px;
-  margin: 0 0 2rem 0;
+  margin: 1rem 0 2rem 0;
     border-radius: 50px;
 }
 
