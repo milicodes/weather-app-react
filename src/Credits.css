@@ -1,3 +1,13 @@
 .Credits {
     margin: 2rem 0 0 0;
 }
+
+a.link-github {
+    color: #00abf1;
+    transition: 200ms all ease-in-out;
+    text-decoration: none;
+}
+
+a.link-github:hover {
+    color: white;
+}
