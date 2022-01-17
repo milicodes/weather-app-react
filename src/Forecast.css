@@ -1,10 +1,5 @@
-.day-forecast-top {
-    margin: 3rem 0 0 0;
-}
 
-.day-forecast-bot {
-    margin: 0 0 3rem 0;
-}
+
 
 div.day-one {
     background: -webkit-linear-gradient( #DCE35B, #56ab2f);
@@ -34,4 +29,12 @@ div.day-five {
 div.day-six {
     background: -webkit-linear-gradient( #8f94fb, #4e54c8);
     border-radius: 30px;
+}
+
+.day-forecast-top {
+    margin: 3rem 0 0 0;
+}
+
+.day-forecast-bot {
+    margin: 0 0 3rem 0;
 }

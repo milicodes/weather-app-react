@@ -1,6 +1,6 @@
 import React from "react";
 import "./Forecast.css";
-import Anime, { anime } from "react-anime";
+import Anime from "react-anime";
 
 
 export default function Forecast() {
@@ -10,14 +10,24 @@ export default function Forecast() {
       <div className="row">
         <div className="col-2">
           {/*Forecast inside */}
-          <div className="container forecast-container day-one">
-            <div className="row justify-content-center">
-              <h4 className="col-12 day-forecast-top">MON</h4>
-              <h4 className="col-12 icon-forecast">O</h4>
-              <h5 className="col-12 day-forecast-bot">23C / 9C</h5>
+          <Anime
+            className="animation-mobile"
+            easing="easeOutElastic"
+            direction="alternate"
+            loop={true}
+            delay={(el, index) => index * 240}
+            translateY={-14}
+          >
+            <div className="container forecast-container day-one">
+              <div className="row justify-content-center">
+                <h4 className="col-12 day-forecast-top">MON</h4>
+                <h4 className="col-12 icon-forecast">O</h4>
+                <h5 className="col-12 day-forecast-bot">23C / 9C</h5>
+              </div>
             </div>
-          </div>
+          </Anime>
         </div>
+
         <div className="col-2">
           <div className="container forecast-container day-two">
             <div className="row justify-content-center">
