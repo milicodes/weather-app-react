@@ -10,11 +10,11 @@ export default function Forecast() {
           {/*Forecast inside */}
           <Anime
             className="animation-mobile"
-            easing="easeOutElastic"
+            easing="easeInOutSine"
             direction="alternate"
             loop={true}
-            delay={(el, index) => index * 240}
-            translateY={-14}
+            delay={100}
+            translateY={-30}
           >
             <div className="container forecast-container day-one">
               <div className="row justify-content-center">
@@ -29,11 +29,11 @@ export default function Forecast() {
         <div className="col-2">
           <Anime
             className="animation-mobile"
-            easing="easeOutElastic"
+            easing="easeInOutSine"
             direction="alternate"
             loop={true}
-            delay={(el, index) => index * 240}
-            translateY={-14}
+            delay={100}
+            translateY={-30}
           >
             <div className="container forecast-container day-two">
               <div className="row justify-content-center">
@@ -47,11 +47,11 @@ export default function Forecast() {
         <div className="col-2">
           <Anime
             className="animation-mobile"
-            easing="easeOutElastic"
+            easing="easeInOutSine"
             direction="alternate"
             loop={true}
-            delay={(el, index) => index * 240}
-            translateY={-14}
+            delay={100}
+            translateY={-30}
           >
             <div className="container forecast-container day-three">
               <div className="row justify-content-center">
@@ -65,11 +65,11 @@ export default function Forecast() {
         <div className="col-2">
           <Anime
             className="animation-mobile"
-            easing="easeOutElastic"
+            easing="easeInOutSine"
             direction="alternate"
             loop={true}
-            delay={(el, index) => index * 240}
-            translateY={-14}
+            delay={100}
+            translateY={-30}
           >
             <div className="container forecast-container day-four">
               <div className="row justify-content-center">
@@ -83,11 +83,11 @@ export default function Forecast() {
         <div className="col-2">
           <Anime
             className="animation-mobile"
-            easing="easeOutElastic"
+            easing="easeInOutSine"
             direction="alternate"
             loop={true}
-            delay={(el, index) => index * 240}
-            translateY={-14}
+            delay={100}
+            translateY={-30}
           >
             <div className="container forecast-container day-five">
               <div className="row justify-content-center">
@@ -101,11 +101,11 @@ export default function Forecast() {
         <div className="col-2">
           <Anime
             className="animation-mobile"
-            easing="easeOutElastic"
+            easing="easeInOutSine"
             direction="alternate"
             loop={true}
-            delay={(el, index) => index * 240}
-            translateY={-14}
+            delay={100}
+            translateY={-30}
           >
             <div className="container forecast-container day-six">
               <div className="row justify-content-center">
