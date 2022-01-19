@@ -48,7 +48,7 @@ div.description-mobile {
 .weather-mobile {
   font-size: 35px;
   font-weight: 600;
-  opacity: 80%;
+  opacity: 0.8;
 }
 
 .icon-mobile {
