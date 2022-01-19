@@ -12,8 +12,20 @@ button.btn-unit-mobile {
   font-weight: 600;
   
 }
+
+div.description-mobile {
+  margin: 0 0 1rem 0;
+  padding: 1rem;
+  background-color: #5a64e25b;
+  border-radius: 25px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
 .temperature-number-mobile {
     font-size: 110px;
+}
+
+.description-transparent {
+  opacity: 60%;
 }
 
 .date-margin-mobile {
@@ -51,5 +63,7 @@ button.btn-unit-mobile {
   margin: 1rem 0 2rem 0;
     border-radius: 50px;
 }
+
+
 
 

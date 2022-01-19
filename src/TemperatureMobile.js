@@ -103,19 +103,25 @@ export default function TemperatureMobile(promps) {
               </div>
             </div>
             {/*Description Mobile*/}
-            <div className="container">
+            <div className="container description-mobile">
               <div className="row">
-                <div className="col-6 col-bor">
+                <div className="col-6">
                   <h2 className="humidity">
                     <FontAwesomeIcon icon={faTint} /> {promps.defaultHumidity}%
                   </h2>
                 </div>
-                <div className="col-6 col-bor">
+                <div className="col-6">
                   <h2 className="wind">
                     {" "}
                     <FontAwesomeIcon icon={faWind} />
                     {Math.round(promps.defaultWind)} km/h
                   </h2>
+                </div>
+                <div className="col-6">
+                  <h4 className="description-transparent">Humidity</h4>
+                </div>
+                <div className="col-6">
+                  <h4 className="description-transparent">Wind</h4>
                 </div>
               </div>
             </div>
