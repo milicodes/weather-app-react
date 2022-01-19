@@ -1,0 +1,29 @@
+div.forecast-container {
+  padding: 0 1rem;
+}
+
+.day-one-mobile {
+  background: -webkit-linear-gradient(#dce35b, #56ab2f);
+  border-radius: 20px;
+  padding: 1rem 0;
+  border: 4px solid #0A0824 ;
+}
+
+.day-two-mobile {
+      background: -webkit-linear-gradient(#dce35b, #56ab2f);
+  border-radius: 20px;
+  padding: 1rem;
+  border: 4px solid #0A0824 ;
+}
+
+.day-three-mobile {
+}
+
+.day-four-mobile {
+}
+
+.day-five-mobile {
+}
+
+.day-six-mobile {
+}
