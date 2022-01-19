@@ -145,13 +145,13 @@ export default function TemperatureMobile(promps) {
               </h2>
             </div>
             {/*Date Mobile*/}
-            <div className="col-3 col-bor"></div>
-            <div className="col-6 date-margin-mobile col-bor">
+            <div className="col-3"></div>
+            <div className="col-6 date-margin-mobile">
               <h5 className="date-mobile">
                 {day} {hours}:{minutes}
               </h5>
             </div>
-            <div className="col-3 col-bor"></div>
+            <div className="col-3"></div>
             {/*Gradient Container*/}
             <div className="container-fluid container-gradient">
               <div className="row">
@@ -192,19 +192,25 @@ export default function TemperatureMobile(promps) {
               </div>
             </div>
             {/*Description Mobile*/}
-            <div className="container">
+            <div className="container description-mobile">
               <div className="row">
-                <div className="col-6 col-bor">
+                <div className="col-6">
                   <h2 className="humidity">
                     <FontAwesomeIcon icon={faTint} /> {promps.defaultHumidity}%
                   </h2>
                 </div>
-                <div className="col-6 col-bor">
+                <div className="col-6">
                   <h2 className="wind">
                     {" "}
                     <FontAwesomeIcon icon={faWind} />
                     {Math.round(promps.defaultWind)} km/h
                   </h2>
+                </div>
+                <div className="col-6">
+                  <h4 className="description-transparent">Humidity</h4>
+                </div>
+                <div className="col-6">
+                  <h4 className="description-transparent">Wind</h4>
                 </div>
               </div>
             </div>
