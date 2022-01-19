@@ -4,7 +4,7 @@ import "./ForecastMobile.css";
 export default function ForecastMobile() {
   return (
     <div className="ForecastMobile">
-      <div className="container forecast-container d-block d-lg-none col-bor">
+      <div className="container forecast-container d-block d-lg-none">
         <div className="row">
           <div className="col-4 day-one-mobile">
             <h4 className="day-forecast">MON</h4>

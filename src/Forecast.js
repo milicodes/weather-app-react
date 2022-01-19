@@ -8,12 +8,13 @@ export default function Forecast() {
       <div className="row">
         <div className="col-2">
           {/*Forecast inside */}
+          {/*Animation Day 1*/}
           <Anime
             className="animation-mobile"
             easing="easeInOutSine"
             direction="alternate"
-            loop={true}
             delay={100}
+            endDelay={600}
             translateY={-30}
           >
             <div className="container forecast-container day-one">
@@ -27,12 +28,13 @@ export default function Forecast() {
         </div>
 
         <div className="col-2">
+          {/*Animation Day 2*/}
           <Anime
             className="animation-mobile"
             easing="easeInOutSine"
             direction="alternate"
-            loop={true}
-            delay={100}
+            delay={200}
+            endDelay={500}
             translateY={-30}
           >
             <div className="container forecast-container day-two">
@@ -49,8 +51,8 @@ export default function Forecast() {
             className="animation-mobile"
             easing="easeInOutSine"
             direction="alternate"
-            loop={true}
-            delay={100}
+            delay={300}
+            endDelay={400}
             translateY={-30}
           >
             <div className="container forecast-container day-three">
@@ -67,8 +69,8 @@ export default function Forecast() {
             className="animation-mobile"
             easing="easeInOutSine"
             direction="alternate"
-            loop={true}
-            delay={100}
+            delay={400}
+            endDelay={300}
             translateY={-30}
           >
             <div className="container forecast-container day-four">
@@ -85,8 +87,8 @@ export default function Forecast() {
             className="animation-mobile"
             easing="easeInOutSine"
             direction="alternate"
-            loop={true}
-            delay={100}
+            delay={500}
+            endDelay={200}
             translateY={-30}
           >
             <div className="container forecast-container day-five">
@@ -103,8 +105,8 @@ export default function Forecast() {
             className="animation-mobile"
             easing="easeInOutSine"
             direction="alternate"
-            loop={true}
-            delay={100}
+            delay={600}
+            endDelay={100}
             translateY={-30}
           >
             <div className="container forecast-container day-six">
