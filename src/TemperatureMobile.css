@@ -25,7 +25,7 @@ div.description-mobile {
 }
 
 .description-transparent {
-  opacity: 60%;
+  opacity: 0.6;
 }
 
 .date-margin-mobile {
