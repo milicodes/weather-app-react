@@ -1,8 +1,20 @@
 import React from "react";
 import "./Forecast.css";
 import Anime from "react-anime";
+import axios from "axios";
 
 export default function Forecast() {
+
+  function handleResponse(response) {
+    
+  }
+
+  let apiKey = `a286ae6c0946e11743cd344706fe7fab`;
+  let lat = 35.6762;
+  let long = 139.6503;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${apiKey}`;
+
+  axios.get(apiUrl).then(handleResponse);
   return (
     <div className="container">
       <div className="row">

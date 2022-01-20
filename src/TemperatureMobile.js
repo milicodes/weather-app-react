@@ -47,7 +47,7 @@ export default function TemperatureMobile(promps) {
         <div className="container-fluid d-block d-lg-none">
           <div className="row margin-temperature-mobile">
             {/*City Mobile*/}
-            <div className="col-12">
+            <div className="col-12 col-bor">
               <h2 className="city-mobile">
                 <button type="submit" className="btn btn-primary">
                   <FontAwesomeIcon icon={faLocationArrow} />
@@ -64,10 +64,10 @@ export default function TemperatureMobile(promps) {
             </div>
             <div className="col-3"></div>
             {/*Gradient Container*/}
-            <div className="container-fluid container-gradient">
+            <div className="container-fluid container-gradient col-bor">
               <div className="row">
                 {/*Icon Mobile*/}
-                <div className="col-12">
+                <div className="col-12 col-bor">
                   <div className="icon-mobile">
                     <Icon defaultIcon={promps.defaultIcon} />
                   </div>
