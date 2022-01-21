@@ -12,6 +12,7 @@ export default function Search(promps) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
+      coord: response.data.coord,
       temp: response.data.main.temp,
       city: response.data.name,
       wind: response.data.wind.speed,
@@ -98,7 +99,7 @@ export default function Search(promps) {
           </div>
         </div>
         {/*Temperature */}
-        <Temperature data={weatherData} />
+        <Temperature data={weatherData} coord={weatherData.coord} />
       </div>
     );
   } else {

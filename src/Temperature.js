@@ -61,7 +61,7 @@ export default function Temperature(promps) {
                   {/*Temperature*/}
                   <div className="col-6">
                     <h2 className="temperature-number col-bor">
-                      {Math.round(promps.data.temp)}° 
+                      {Math.round(promps.data.temp)}°
                     </h2>
                   </div>
                   {/*Icon*/}
@@ -140,13 +140,13 @@ export default function Temperature(promps) {
             <div className="col-12  d-none d-lg-block">
               {/*Right container for Weather*/}
               {/* Weather for Desktop*/}
-              <Forecast />
+              <Forecast coord={promps.coord} />
             </div>
           </div>
           {/*Ending of Right Container*/}
         </div>
         {/*Forecast for Mobile*/}
-        <ForecastMobile />
+        <ForecastMobile coord={promps.coord} />
         {/*Credits*/}
         <Credits />
       </div>
@@ -266,13 +266,13 @@ export default function Temperature(promps) {
               <div className="col-12  d-none d-lg-block">
                 {/*Right container for Weather*/}
                 {/* Weather for Desktop*/}
-                <Forecast />
+                <Forecast coord={promps.coord} />
               </div>
             </div>
             {/*Ending of Right Container*/}
           </div>
           {/*Forecast for Mobile*/}
-          <ForecastMobile />
+          <ForecastMobile coord={promps.coord} />
           {/*Credits*/}
           <Credits />
         </div>
