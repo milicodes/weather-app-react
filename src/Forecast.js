@@ -6,10 +6,10 @@ import axios from "axios";
 export default function Forecast(promps) {
   const [loaded, setLoaded] = useState(false);
   const [forecast, setForecast] = useState(null);
+
   function handleResponse(response) {
-    setLoaded(true)
     setForecast(response.data.daily);
-    console.log(response.data.daily)
+    setLoaded(true);
   }
 
   if (loaded) {
@@ -31,7 +31,14 @@ export default function Forecast(promps) {
                 <div className="row justify-content-center">
                   <h4 className="col-12 day-forecast-top">MON</h4>
                   <h4 className="col-12 icon-forecast">O</h4>
-                  <h5 className="col-12 day-forecast-bot">23C / 9C</h5>
+                  <h5 className="col-12 day-forecast-bot">
+                    <span className="max-temp">
+                      {Math.round(forecast[0].temp.max)}° {""}
+                    </span>
+                    <span className="min-temp">
+                      {Math.round(forecast[0].temp.min)}°
+                    </span>
+                  </h5>
                 </div>
               </div>
             </Anime>
