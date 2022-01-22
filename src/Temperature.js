@@ -31,36 +31,36 @@ export default function Temperature(promps) {
     return (
       <div className="Temperature margin-top">
         {/*Main container */}
-        <div className="container col-bor">
+        <div className="container">
           <div className="row">
             {/*Left Section Desktop*/}
             <div className="col-12 d-none d-lg-block margin-sides">
               {/*Left Container Desktop*/}
-              <div className="container main-container-gradient col-bor">
+              <div className="container main-container-gradient ">
                 <div className="row">
                   {/*City*/}
-                  <div className="col-6 col-bor">
+                  <div className="col-6 ">
                     <h2 className="city">
                       <button
                         type="submit"
-                        className="btn btn-desk btn-primary col-bor"
+                        className="btn btn-desk btn-primary "
                       >
                         <FontAwesomeIcon icon={faLocationArrow} />
                       </button>
                       {promps.data.city}
                     </h2>
                   </div>
-                  <div className="col-6 col-bor"></div>
+                  <div className="col-6 "></div>
                   {/*Date*/}
-                  <div className="col-auto border-date col-bor">
+                  <div className="col-auto border-date ">
                     <h5 className="date-desktop">
                       <MainDate date={promps.data.date} />
                     </h5>
                   </div>
-                  <div className="col-6 col-bor"></div>
+                  <div className="col-6 "></div>
                   {/*Temperature*/}
                   <div className="col-6">
-                    <h2 className="temperature-number col-bor">
+                    <h2 className="temperature-number ">
                       {Math.round(promps.data.temp)}°
                     </h2>
                   </div>

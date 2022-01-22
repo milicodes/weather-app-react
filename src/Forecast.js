@@ -135,7 +135,7 @@ export default function Forecast(promps) {
     let apiKey = `a286ae6c0946e11743cd344706fe7fab`;
     let lat = promps.coord.lat;
     let long = promps.coord.lon;
-    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${apiKey}`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`;
 
     axios.get(apiUrl).then(handleResponse);
     return null;
