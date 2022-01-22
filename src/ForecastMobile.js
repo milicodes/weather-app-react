@@ -59,7 +59,7 @@ export default function ForecastMobile(promps) {
       </div>
     );
   } else {
-     let apiKey = `a286ae6c0946e11743cd344706fe7fab`;
+     let apiKey = `9e2217a99a4cb734b9244d33d7fb9847`;
      let lat = promps.coord.lat;
      let long = promps.coord.lon;
      let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`;

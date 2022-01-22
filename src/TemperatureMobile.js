@@ -69,7 +69,7 @@ export default function TemperatureMobile(promps) {
                 {/*Icon Mobile*/}
                 <div className="col-12">
                   <div className="icon-mobile">
-                    <Icon defaultIcon={promps.defaultIcon} />
+                    <Icon defaultIcon={promps.defaultIcon} size={160} />
                   </div>
                 </div>
                 {/*Temperature Mobile*/}
@@ -158,7 +158,7 @@ export default function TemperatureMobile(promps) {
                 {/*Icon Mobile*/}
                 <div className="col-12">
                   <div className="icon-mobile">
-                    <Icon defaultIcon={promps.defaultIcon} />
+                    <Icon defaultIcon={promps.defaultIcon} size={160} />
                   </div>
                 </div>
                 {/*Temperature Mobile*/}

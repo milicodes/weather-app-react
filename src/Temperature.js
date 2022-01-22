@@ -68,8 +68,7 @@ export default function Temperature(promps) {
                   <div className="col-6">
                     <div className="icon">
                       <Icon
-                        defaultIcon={promps.data.icon}
-                        description={promps.data.description}
+                        defaultIcon={promps.data.icon} size={160}
                       />
                     </div>
                   </div>
@@ -193,10 +192,7 @@ export default function Temperature(promps) {
                     {/*Icon*/}
                     <div className="col-6">
                       <div className="icon">
-                        <Icon
-                          defaultIcon={promps.data.icon}
-                          description={promps.data.description}
-                        />
+                        <Icon defaultIcon={promps.data.icon} size={160} />
                       </div>
                     </div>
 
