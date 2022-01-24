@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import "./Forecast.css";
 import Anime from "react-anime";
 import axios from "axios";
-import Icon from "./Icon";
+import { WeatherForecast } from "./WeatherForecast";
 
 
 
@@ -32,19 +32,7 @@ export default function Forecast(promps) {
             >
               <div className="container forecast-container day-one">
                 <div className="row justify-content-center">
-                  <h4 className="col-12 day-forecast-top">{forecast[0].dt}</h4>
-                  <div className="col-12 icon-forecast">
-                    {" "}
-                    <Icon defaultIcon={forecast[0].weather[0].icon} size={60} />
-                  </div>
-                  <h5 className="col-12 day-forecast-bot">
-                    <span className="max-temp">
-                      {Math.round(forecast[0].temp.max)}° {""}
-                    </span>
-                    <span className="min-temp">
-                      {Math.round(forecast[0].temp.min)}°
-                    </span>
-                  </h5>
+                  <WeatherForecast data={forecast[0]}/>
                 </div>
               </div>
             </Anime>
@@ -145,7 +133,7 @@ export default function Forecast(promps) {
       </div>
     );
   } else {
-    let apiKey = `9e2217a99a4cb734b9244d33d7fb9847`;
+    let apiKey = `1f9a7a458edc58ca1a5745fa660a62f3`;
     let lat = promps.coord.lat;
     let long = promps.coord.lon;
     let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`;
