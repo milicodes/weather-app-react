@@ -1,5 +1,6 @@
 import React from "react";
 import Icon from "./Icon";
+import "./WeatherForecast.css"
 
 export function WeatherForecast(promps) {
   function maxTemperature() {

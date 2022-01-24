@@ -5,7 +5,6 @@ import axios from "axios";
 import { WeatherForecast } from "./WeatherForecast";
 
 
-
 export default function Forecast(promps) {
   const [loaded, setLoaded] = useState(false);
   const [forecast, setForecast] = useState(null);

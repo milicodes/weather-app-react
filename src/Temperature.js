@@ -12,7 +12,7 @@ import MainDate from "./MainDate";
 import Icon from "./Icon";
 
 export default function Temperature(promps) {
-
+  
   const [unit, setUnit] = useState("celcius");
   function handleFahrenheit(event) {
     event.preventDefault();

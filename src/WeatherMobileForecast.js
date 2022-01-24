@@ -1,26 +1,26 @@
 import React from "react";
 import Icon from "./Icon";
 
-function maxTemperature() {
-  let temperature = Math.round(promps.data.temp.max);
-  return `${temperature}°`;
-}
-
-function minTemperature() {
-  let temperatureMin = Math.round(promps.data.temp.min);
-  return `${temperatureMin}°`;
-}
-
-function day() {
-  let date = new Date(promps.data.dt);
-  let day = date.getDay();
-
-  let days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
-
-  return days[day];
-}
 
 export function WeatherMobileForecast(promps) {
+  function maxTemperature() {
+    let temperature = Math.round(promps.data.temp.max);
+    return `${temperature}°`;
+  }
+
+  function minTemperature() {
+    let temperatureMin = Math.round(promps.data.temp.min);
+    return `${temperatureMin}°`;
+  }
+
+  function day() {
+    let date = new Date(promps.data.dt);
+    let day = date.getDay();
+
+    let days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+
+    return days[day];
+  }
   return (
     <div className="WeatherForecast">
       <h4 className="col-12 day-forecast">{day()}</h4>
