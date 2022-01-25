@@ -18,8 +18,8 @@ export function WeatherForecast(promps) {
     let day = date.getDay();
 
     let days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
-
     return days[day];
+   
   }
   return (
     <div className="WeatherForecast">
