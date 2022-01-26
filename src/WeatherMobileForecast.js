@@ -14,7 +14,7 @@ export function WeatherMobileForecast(promps) {
   }
 
   function day() {
-    let date = new Date(promps.data.dt);
+    let date = new Date(promps.data.dt * 1000);
     let day = date.getDay();
 
     let days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];

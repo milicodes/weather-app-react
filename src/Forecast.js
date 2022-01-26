@@ -24,14 +24,25 @@ export default function Forecast(promps) {
               return (
                 <div className="col-2" key={index}>
                   {/*Forecast*/}
-                  <div className="container forecast-container day-one">
-                    <div className="row justify-content-center">
-                      <WeatherForecast data={dailyForecast} />
+                  <Anime
+                    className="animation-mobile"
+                    easing="easeInOutSine"
+                    direction="alternate"
+                    delay={50}
+                    translateY={-20}
+                    loop={true}
+                  >
+                    <div className="container forecast-container day-one">
+                      <div className="row justify-content-center">
+                        <WeatherForecast data={dailyForecast} />
+                      </div>
                     </div>
-                  </div>
+                  </Anime>
                 </div>
               );
-            } else {return null}
+            } else {
+              return null;
+            }
           })}
         </div>
       </div>
