@@ -19,8 +19,8 @@ export default function Forecast(promps) {
         <div className="row">
           {/*Loop for Forecast Days*/}
           {forecast.map(function (dailyForecast, index) {
-            /*Condition for showing only 6 days*/
-            if (index < 6) {
+            /*Condition for showing only 6 days + after today*/
+            if (index >= 1 && index < 7) {
               return (
                 <div className="col-2" key={index}>
                   {/*Forecast*/}
@@ -31,7 +31,7 @@ export default function Forecast(promps) {
                   </div>
                 </div>
               );
-            }
+            } else {return null}
           })}
         </div>
       </div>
