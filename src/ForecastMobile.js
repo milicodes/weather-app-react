@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./ForecastMobile.css";
 import axios from "axios";
+import Anime from "react-anime";
 import { WeatherMobileForecast } from "./WeatherMobileForecast";
-
 
 export default function ForecastMobile(promps) {
   const [loaded, setLoaded] = useState(false);
@@ -16,38 +16,38 @@ export default function ForecastMobile(promps) {
   if (loaded) {
     return (
       <div className="ForecastMobile">
-        <div className="container forecast-container d-block d-lg-none">
-          <div className="row">
-            <div className="col-4 day-one-mobile">
-            <WeatherMobileForecast data={forecast[0]} />
-            </div>
-            <div className="col-4 day-two-mobile">
-              <h4 className="day-forecast">TUE</h4>
-              <h4 className="col-12 icon-forecast">O</h4>
-              <h5 className="day-forecast">23C/9C</h5>
-            </div>
-            <div className="col-4 day-three-mobile">
-              <h4 className="day-forecast">WED</h4>
-              <h4 className="col-12 icon-forecast">O</h4>
-              <h5 className="day-forecast">23C/9C</h5>
-            </div>
-            <div className="col-4 day-four-mobile">
-              <h4 className="day-forecast">THU</h4>
-              <h4 className="col-12 icon-forecast">O</h4>
-              <h5 className="day-forecast">23C/9C</h5>
-            </div>
-            <div className="col-4 day-five-mobile">
-              <h4 className="day-forecast">SAT</h4>
-              <h4 className="col-12 icon-forecast">O</h4>
-              <h5 className="day-forecast">23C/9C</h5>
-            </div>
-            <div className="col-4 day-six-mobile">
-              <h4 className="day-forecast">SUN</h4>
-              <h4 className="col-12 icon-forecast">O</h4>
-              <h5 className="day-forecast">23C/9C</h5>
+        <Anime
+          className="animation-mobile"
+          easing="easeInOutSine"
+          direction="alternate"
+          delay={10}
+          translateY={-12}
+          loop={true}
+        >
+          <div className="container forecast-container d-block d-lg-none">
+            <div className="row">
+              {/*Loop for Forecast Days*/}
+              {forecast.map(function (dailyForecast, index) {
+                /*Condition for showing only 6 days + after today*/
+                if (index >= 1 && index < 7) {
+                  return (
+                    <div className="col-4 day-one-mobile" key={index}>
+                      {/*Forecast*/}
+
+                      <div className="container">
+                        <div className="row justify-content-center">
+                          <WeatherMobileForecast data={dailyForecast} />
+                        </div>
+                      </div>
+                    </div>
+                  );
+                } else {
+                  return null;
+                }
+              })}
             </div>
           </div>
-        </div>
+        </Anime>
       </div>
     );
   } else {
