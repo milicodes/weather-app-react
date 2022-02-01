@@ -26,7 +26,7 @@ export default function Search(promps) {
 
   // API Call in real time with search engine
   function searchCity() {
-    const apiKey = "62a816282d3b51b7451838a6b7b63934";
+    const apiKey = "4f39a312dae937967cb663d1c17199b9";
     let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiURL).then(handleResponse);
   }
