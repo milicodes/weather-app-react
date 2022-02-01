@@ -49,9 +49,6 @@ export default function TemperatureMobile(promps) {
             {/*City Mobile*/}
             <div className="col-12">
               <h2 className="city-mobile">
-                <button type="submit" className="btn btn-primary">
-                  <FontAwesomeIcon icon={faLocationArrow} />
-                </button>{" "}
                 {promps.defaultCity}{" "}
               </h2>
             </div>

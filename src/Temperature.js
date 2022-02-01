@@ -41,12 +41,6 @@ export default function Temperature(promps) {
                   {/*City*/}
                   <div className="col-6 ">
                     <h2 className="city">
-                      <button
-                        type="submit"
-                        className="btn btn-desk btn-primary "
-                      >
-                        <FontAwesomeIcon icon={faLocationArrow} />
-                      </button>
                       {promps.data.city}
                     </h2>
                   </div>
