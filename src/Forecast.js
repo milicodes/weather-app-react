@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Forecast.css";
 import Anime from "react-anime";
 import axios from "axios";
@@ -7,6 +7,11 @@ import { WeatherForecast } from "./WeatherForecast";
 export default function Forecast(promps) {
   const [loaded, setLoaded] = useState(false);
   const [forecast, setForecast] = useState(null);
+
+  // Refreshing Forecast after search bar is loaded 
+    useEffect(() => {
+      setLoaded(false)
+    },[promps.coord]);
 
   function handleResponse(response) {
     setForecast(response.data.daily);

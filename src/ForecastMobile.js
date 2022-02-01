@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./ForecastMobile.css";
 import axios from "axios";
 import Anime from "react-anime";
@@ -7,6 +7,11 @@ import { WeatherMobileForecast } from "./WeatherMobileForecast";
 export default function ForecastMobile(promps) {
   const [loaded, setLoaded] = useState(false);
   const [forecast, setForecast] = useState(null);
+
+  // Refreshing Forecast after search bar is loaded
+  useEffect(() => {
+    setLoaded(false);
+  }, [promps.coord]);
 
   function handleResponse(response) {
     setForecast(response.data.daily);
