@@ -8,6 +8,16 @@ export default function ForecastMobile(promps) {
   const [loaded, setLoaded] = useState(false);
   const [forecast, setForecast] = useState(null);
 
+  function coordsLoaded() {
+    let apiKey = `1f9a7a458edc58ca1a5745fa660a62f3`;
+    let lat = promps.coord.lat;
+    let long = promps.coord.lon;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`;
+
+    axios.get(apiUrl).then(handleResponse);
+    
+  }
+
   // Refreshing Forecast after search bar is loaded
   useEffect(() => {
     setLoaded(false);
@@ -17,6 +27,7 @@ export default function ForecastMobile(promps) {
     setForecast(response.data.daily);
     setLoaded(true);
   }
+
 
   if (loaded) {
     return (
@@ -56,12 +67,7 @@ export default function ForecastMobile(promps) {
       </div>
     );
   } else {
-    let apiKey = `1f9a7a458edc58ca1a5745fa660a62f3`;
-    let lat = promps.coord.lat;
-    let long = promps.coord.lon;
-    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`;
-
-    axios.get(apiUrl).then(handleResponse);
+    coordsLoaded();
     return null;
   }
 }

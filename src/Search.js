@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import Temperature from "./Temperature";
 import axios from "axios";
+import LoadingIcons from "react-loading-icons";
 
 export default function Search(promps) {
   // State for realtime API weather
@@ -25,7 +26,7 @@ export default function Search(promps) {
 
   // API Call in real time with search engine
   function searchCity() {
-   const apiKey = "1f9a7a458edc58ca1a5745fa660a62f3";
+    const apiKey = "1f9a7a458edc58ca1a5745fa660a62f3";
     let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiURL).then(handleResponse);
   }
@@ -66,7 +67,10 @@ export default function Search(promps) {
                         />
                       </div>
                       <div className="col-md-3 d-md-block d-none search-button">
-                        <button type="submit" className="btn btn-primary btn-search">
+                        <button
+                          type="submit"
+                          className="btn btn-primary btn-search"
+                        >
                           <FontAwesomeIcon icon={faSearch} />
                         </button>
                       </div>
@@ -104,6 +108,6 @@ export default function Search(promps) {
     );
   } else {
     searchCity();
-    return "Loading...";
+    return <LoadingIcons.Rings speed={0.75} />;
   }
 }

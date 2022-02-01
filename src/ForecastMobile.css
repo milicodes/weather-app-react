@@ -3,43 +3,13 @@ div.forecast-container {
 }
 
 .day-one-mobile {
-  background: -webkit-linear-gradient(#dce35b, #56ab2f);
+  background: -webkit-linear-gradient(#a7bfe8, #6190e8);
   border-radius: 20px;
   padding: 1rem 0;
   border: 4px solid #0a0824;
 }
 
-.day-two-mobile {
-  background: -webkit-linear-gradient(#92fe9d, #00c9ff);
-  border-radius: 20px;
-  padding: 1rem;
-  border: 4px solid #0a0824;
-}
-
-.day-three-mobile {
+.day-one-mobile:hover {
   background: -webkit-linear-gradient(#c2e59c, #64b3f4);
-  border-radius: 20px;
-  padding: 1rem;
-  border: 4px solid #0a0824;
 }
 
-.day-four-mobile {
-  background: -webkit-linear-gradient(#91eae4, #86a8e7);
-  border-radius: 20px;
-  padding: 1rem;
-  border: 4px solid #0a0824;
-}
-
-.day-five-mobile {
-  background: -webkit-linear-gradient(#a7bfe8, #6190e8);
-  border-radius: 20px;
-  padding: 1rem;
-  border: 4px solid #0a0824;
-}
-
-.day-six-mobile {
-  background: -webkit-linear-gradient(#8f94fb, #4e54c8);
-  border-radius: 20px;
-  padding: 1rem;
-  border: 4px solid #0a0824;
-}

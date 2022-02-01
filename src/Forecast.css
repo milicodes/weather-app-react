@@ -1,41 +1,18 @@
-
-
-
 div.day-one {
-    background: -webkit-linear-gradient( #DCE35B, #56ab2f);
-    border-radius: 30px;
+  background: -webkit-linear-gradient(#a7bfe8, #6190e8);
+  border-radius: 30px;
+  transition: 300ms all ease-in-out;
 }
 
-div.day-two {
-    background: -webkit-linear-gradient(#92fe9d, #00c9ff);
-    border-radius: 30px;
+div.day-one:hover {
+  background: -webkit-linear-gradient(#c2e59c, #64b3f4);
 }
 
-div.day-three {
-    background: -webkit-linear-gradient( #c2e59c, #64b3f4);
-    border-radius: 30px;
-}
-
-div.day-four {
-    background: -webkit-linear-gradient( #91EAE4, #86A8E7);
-    border-radius: 30px;
-}
-
-div.day-five {
-     background: -webkit-linear-gradient( #A7BFE8, #6190E8);
-    border-radius: 30px;
-}
-
-div.day-six {
-    background: -webkit-linear-gradient( #8f94fb, #4e54c8);
-    border-radius: 30px;
-}
 
 .day-forecast-top {
-    margin: 2rem 0 0 0;
+  margin: 2rem 0 0 0;
 }
 
 .day-forecast-bot {
-    margin: 0 0 2rem 0;
+  margin: 0 0 2rem 0;
 }
-
