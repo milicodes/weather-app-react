@@ -9,7 +9,7 @@ export default function Forecast(promps) {
   const [forecast, setForecast] = useState(null);
 
    function coordsLoaded() {
-     let apiKey = `1f9a7a458edc58ca1a5745fa660a62f3`;
+     let apiKey = `a286ae6c0946e11743cd344706fe7fab`;
      let lat = promps.coord.lat;
      let long = promps.coord.lon;
      let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`;
