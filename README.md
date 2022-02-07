@@ -1,4 +1,4 @@
-# React Weather App (made by mili.codes) 
+# ⛅ React Weather App (made by mili.codes) ⚛️
 
 -✅ Created as a certification project for SheCodes Workshops.\
 -✅ API used - https://openweathermap.org/api/one-call-api \
