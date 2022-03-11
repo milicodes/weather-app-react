@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTint } from "@fortawesome/free-solid-svg-icons";
 import { faWind } from "@fortawesome/free-solid-svg-icons";
 import Icon from "./Icon.js";
-import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 
 export default function TemperatureMobile(promps) {
   let Days = [

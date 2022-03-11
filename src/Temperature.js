@@ -7,7 +7,6 @@ import ForecastMobile from "./ForecastMobile";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTint } from "@fortawesome/free-solid-svg-icons";
 import { faWind } from "@fortawesome/free-solid-svg-icons";
-import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 import MainDate from "./MainDate";
 import Icon from "./Icon";
 

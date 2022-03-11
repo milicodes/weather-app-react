@@ -1,13 +1,10 @@
 div.day-one {
-  background: -webkit-linear-gradient(#a7bfe8, #6190e8);
+  background: -webkit-linear-gradient(#43C6AC, #4ca2cd);
   border-radius: 30px;
-  transition: 300ms all ease-in-out;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
-
-div.day-one:hover {
-  background: -webkit-linear-gradient(#c2e59c, #64b3f4);
-}
-
 
 .day-forecast-top {
   margin: 2rem 0 0 0;

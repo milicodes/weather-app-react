@@ -108,6 +108,14 @@ export default function Search(promps) {
     );
   } else {
     searchCity();
-    return <LoadingIcons.Rings speed={0.75} />;
+    return (
+      <div className="container">
+        <div className="row">
+          <div className="col-12 padding-loading" align="center">
+            <LoadingIcons.Rings viewBox="0 0 300 300" strokeWidth={100} speed={0.75} />
+          </div>
+        </div>
+      </div>
+    );
   }
 }
